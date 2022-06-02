@@ -84,22 +84,22 @@ footer
   
 .blue.btn:hover 
 {
-    background-color: white;
-    color: var(--softBlue);
-    border: 2px solid var(--softBlue);
+    background-color:var(--white);
+    color: var(--soft-blue);
+    border: 2px solid var(--soft-blue);
 }
   
 .red.btn:hover 
 {
-    background-color: white;
-    color: var(--softRed);
-    border: 2px solid var(--softRed);
+    background-color: var(--white);
+    color: var(--soft-red);
+    border: 2px solid var(--soft-red);
 }
   
 .blue 
 {
-    background-color: var(--softBlue);
-    color: white;
+    background-color: var(--soft-blue);
+    color: var(--white);
     font-weight: 500;
     text-align: center;
     font-size: 18px;
@@ -107,8 +107,8 @@ footer
   
 .red 
 {
-    background-color: var(--softRed);
-    color: white;
+    background-color: var(--soft-red);
+    color: var(--white);
     font-weight: 500;
     text-align: center;
     font-size: 18px;
@@ -152,12 +152,12 @@ footer
 nav ul.flex li a 
 {
     text-transform: uppercase;
-    color: var(--veryDarkBlue);
+    color: var(--very-dark-blue);
 }
   
 nav ul.flex li a:hover 
 {
-    color: var(--softRed);
+    color: var(--soft-red);
     cursor: pointer;
 }
   
@@ -168,25 +168,25 @@ nav ul.flex li a:hover
   
 .red.btn:hover 
 {
-    color: var(--softRed);
-    background-color: white;
-    border: 2px solid var(--softRed);
+    color: var(--soft-red);
+    background-color: var(--white);
+    border: 2px solid var(--soft-red);
 }
   
 h1 
 {
     font-size: 3em;
-    color: var(--veryDarkBlue);
+    color: var(--very-dark-blue);
 }
   
 h3, h4 
 {
-    color: var(--veryDarkBlue);
+    color: var(--very-dark-blue);
 }
   
 p 
 {
-    color: var(--grayishBlue);
+    color: var( --grayish-blue);
     line-height: 1.5em;
 }
   
@@ -226,7 +226,7 @@ p
   
 .questionText h2 
 {
-    color: var(--veryDarkBlue);
+    color: var(--very-dark-blue);
     margin-bottom: 20px;
 }
   
@@ -289,7 +289,7 @@ button.tab-links1:first-child
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: var(--veryDarkBlue);
+    color: var(--very-dark-blue);
     font-weight: 500;
     transition: color .2s ease;
     border: none;
@@ -297,7 +297,7 @@ button.tab-links1:first-child
   
 .button-wrap1:hover p 
 {
-    color: var(--softRed);
+    color: var(--soft-red);
 }
   
 .button-wrap1 .accordionIcon 
@@ -342,7 +342,7 @@ button.tab-links1:first-child
   
 .tabContent-des1 h4 
 {
-    color: var(--veryDarkBlue);
+    color: var(--very-dark-blue);
     font-size: 1.6rem;
     margin-bottom: 20px;
 }
@@ -351,7 +351,7 @@ button.tab-links1:first-child
 {
     width: 100%;
     height: auto;
-    color: var(--grayishBlue);
+    color: var( --grayish-blue);
     margin-bottom: 20px;
 }
   
@@ -364,7 +364,7 @@ button.tab-links1:first-child
   
 .contact h3, h5 
 {
-    color: white;
+    color: var(--white);
     text-align: center;
     font-weight: none;
 }
@@ -384,4 +384,422 @@ button.tab-links1:first-child
 .emailAlert.show 
 {
     display: block;
+}
+
+@media screen and (max-width: 1440px) {
+    .question 
+    {
+        padding: 60px 165px;
+    }
+
+    nav 
+    {
+        padding: 60px 165px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul .flex 
+    {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li 
+    {
+        margin-left: 20px;
+    }
+
+    .hamburger
+    {
+        display: none;
+    }
+
+    .simpleBookmark 
+    {
+        padding: 60px 0px 60px 165px;
+    }
+
+    .simpleBookmark .blue .btn 
+    {
+        padding: 7px 15px;
+        font-weight: 500;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .simpleBookmark .lightGrey.btn
+    {
+        padding: 7px 15px;
+        font-weight: 500;
+        text-align: center;
+        font-size: 18px;
+        background: #E5E5E5;
+    }
+
+    .simpleBookmark .lightGrey.btn:hover 
+    {
+        border: 2px solid var( --grayish-blue)
+    }
+
+    .simpleBookmark::after
+    {
+        content: '';
+        position: absolute;
+        top: 340px;
+        right: 0;
+        width: 400px;
+        height: 350px;
+        border-top-left-radius: 600px;
+        border-bottom-left-radius: 600px;
+        background-color: var(--soft-blue);
+        z-index: -1;
+    }
+
+    .simpBookmarkText 
+    {
+        margin-top: 50px;
+    }
+
+    .simpBookmarkText .buts .blue.btn
+    {
+        margin-right: 15px;
+    }
+
+    .simpBookmarkText button.btn
+    {
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .simpBookmarkText h1
+    {
+        margin-bottom: 20px;
+    }
+
+    .simpBookmarkText p
+    {
+        margin-bottom: 20px;
+        line-height: 1.7em;
+        color: var(--grayish-blue);
+    }
+
+    .simpBookmarkText .btn
+    {
+        width: 160px;
+    }
+
+    .simpBookmarkText .btn:hover
+    {
+        border: 1px solid var(--grayish-blue);
+        color: var(--grayish-blue);
+        background: var(--white);
+        cursor: pointer;
+    }
+
+    .simpBookmarkText .btn.blue:hover
+    {
+        border: 2px solid var(--soft-blue);
+        color: var(--soft-blue);
+        background: var(--white);
+        cursor: pointer;
+    }
+
+    .tabDiv
+    {
+        width: 1440px;
+        height: 800px;
+        max-width: 1440px;
+        padding: 60px 165px 60px 0px;
+    }
+
+    .tabDiv::before
+    {
+        content: '';
+        position: absolute;
+        top: 1200px;
+        right: 0;
+        width: 400px;
+        height: 350px;
+        border-top-left-radius: 600px;
+        border-bottom-left-radius: 600px;
+        background-color: var(--soft-blue);
+        z-index: -1;
+    }
+
+    .tabPrgrph
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabPrgrph h3 
+    {
+        margin-bottom: 20px;
+    }
+
+    .tabPrgrph p 
+    {
+        margin-bottom: 40px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .download
+    {
+        padding: 60px 165px;
+    }
+
+    .download img.social
+    {
+        display: block;
+        width: auto;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+
+    .download img.dot 
+    {
+        height: 4px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .cards
+    {
+        justify-content: center;
+        height: 400px;
+    }
+
+    .card
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        box-shadow: 0px 8px 20px -1px rgba(119, 119, 119, 1);
+    }
+
+    .card p 
+    {
+        margin-bottom: 30px;
+    }
+
+    .card .btn 
+    {
+        margin-top: 20px;
+    }
+
+    .card:first-child
+    {
+        margin-right: 40px;
+        align-self: flex-start;
+    }
+
+    .card:nth-child(2)
+    {
+        align-self: center;
+    }
+
+    .card:last-child
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .downloadText 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .downloadText h3 
+    {
+        margin-bottom: 30px;
+    }
+    
+    .downloadText p 
+    {
+        margin-bottom: 40px;
+        width: 40%;
+        text-align: center;
+    }
+    
+    .card .btn:hover 
+    {
+        background-color: var(--white);
+        color: var(--soft-blue);
+        border: 2px solid var(--soft-blue);
+    }
+
+      /* Tab Button */
+    .tab 
+    {
+        display: flex;
+        justify-content: center;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        margin-left: 40px;
+    }
+
+    .tab button 
+    {
+        width: 200px;
+        height: 50px;
+        background: var(--white);
+        border: none;
+        cursor: pointer;
+        outline: none;
+        transition: all .5s ease;
+        margin-bottom: 100px;
+        margin-right: 40px;
+        border-bottom: 0.5px solid var(--grayish-blue);
+    }
+
+    .tab button:hover {
+        background: var(--white);
+        border-bottom: 5px solid var(--soft-red);
+    }
+
+    .tab button h4 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+        font-style: none;
+        font-weight: none;
+        color: var(--grayish-blue );
+    }
+
+    .tab button:hover h4 
+    {
+        opacity: 1;
+    }
+
+    /* Tab Content */
+    .tabContent 
+    {
+        display: none;
+    }
+
+    .showContent 
+    {
+        display: block;
+    }
+
+    .tabContent-wrap 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 100px;
+    }
+
+    .tabContent-des h4 
+    {
+        color: var(--very-dark-blue);
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .tabContent-des p {
+        width: 400px;
+        color: var(--grayish-blue);
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .tabContent-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .tabContent-des {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .tabContent-img img {
+        width: 536px;
+        height: auto;
+        margin-right: 120px;
+    }
+
+    .contact {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        background-color: var(--soft-blue);
+        color: var(--white);
+    }
+
+    .emailCorrection {
+        border: none;
+        outline: none;
+        padding: 8px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        width: 230px;
+    }
+
+    .inputValid {
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 3px;
+        display: flex;
+        align-items: flex-start;
+        margin-right: 10px;
+    }
+
+    .inputValid p {
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 500;
+        font-style: italic;
+        display: none;
+    }
+
+    footer {
+        background-color: var(--very-dark-blue);
+        padding: 35px 165px 10px 165px;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .footerTop {
+        justify-content: space-between;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .footerTop ul.flex {
+        margin-left: 50px;
+    }
+
+    .footerTop ul.flex li a {
+        text-transform: uppercase;
+        margin-right: 20px;
+        color: #fff;
+    }
+
+    .footerTop ul.flex li a:hover {
+        color: tomato;
+    }
+
+    footer .social img:first-child {
+        margin-right: 20px;
+    }
+
+    .filterIcon:hover {
+        filter: invert(42%) sepia(34%) saturate(1085%) hue-rotate(314deg) brightness(107%) contrast(105%);
+    }
+
+    .footerBottom {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 20px;
+        justify-content: center;
+    }
 }
