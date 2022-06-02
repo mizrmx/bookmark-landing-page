@@ -803,3 +803,937 @@ button.tab-links1:first-child
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 1300px) {
+    nav 
+    {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    
+    .simpleBookmark 
+    {
+        padding: 60px 0px 60px 100px;
+    }
+    
+    .tabDiv 
+    {
+        padding: 60px 100px 60px -65px;
+    }
+    
+    footer 
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .question 
+    {
+        padding: 60px 100px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .tabDiv {
+      padding: 60px 50px 60px -135px;
+    }
+  
+    .question {
+      padding: 60px 50px;
+    }
+  }
+  
+  @media screen and (max-width:1200px) {
+    .tabDiv {
+      padding: 60px 50px 60px -175px;
+    }
+  }
+  
+  @media screen and (max-width:1100px) {
+    .tabDiv {
+      padding: 60px 50px 60px -175px;
+    }
+  
+    .tabContent-img {
+      margin-left: -100px;
+    }
+  
+    .tabs {
+      margin-left: -150px;
+    }
+  
+    .tabContent-img img {
+      width: 400px;
+      height: auto;
+    }
+  
+    .tabContent-des {
+      margin-left: -20px;
+    }
+  
+    .simpleBookmark .blue.btn {
+      font-size: 14px;
+    }
+  
+    .download .blue.btn {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  
+    .simpleBookmark .lightGrey.btn {
+      font-size: 14px;
+    }
+  
+    .tabPrgrph {
+      margin-left: -150px;
+    }
+  
+    .card.social {
+      width: 40px;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width:1000px) {
+    nav {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  
+    .simpleBookmark {
+      padding: 60px 0px 60px 50px;
+    }
+  
+    .tabDiv {
+      padding: 60px 50px 60px -65px;
+    }
+  
+    footer {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .simpImg {
+      width: 500px;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .simpBookmarkText h1 {
+      font-size: 2em;
+    }
+  
+    .tabDiv {
+      margin-left: -60px;
+    }
+  
+    .tabContent-img img {
+      width: 400px;
+      height: auto;
+    }
+  
+    .simpleBookmark::after {
+      content: '';
+      position: absolute;
+      top: 400px;
+      right: 0;
+      width: 300px;
+      height: 200px;
+      border-top-left-radius: 600px;
+      border-bottom-left-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .tabDiv::before {
+      content: '';
+      position: absolute;
+      top: 1200px;
+      left: 0;
+      width: 300px;
+      height: 200px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .download {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .question {
+      width: 100%;
+    }
+  
+    .questionText {
+      width: 80%;
+    }
+  
+    .questionAccordion {
+      width: 80%;
+    }
+  
+    .button-wrap1 {
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    button.tabLinks1 {
+      width: 600px;
+    }
+  
+    .button-wrap1 {
+      width: 600px;
+    }
+  
+    .button-wrap1 p {
+      width: 600px;
+    }
+  }
+  
+  @media screen and (max-width:900px) {
+    .simpImg {
+      width: 360px;
+      height: auto;
+      margin-top: 80px;
+      margin-left: 40px;
+    }
+  
+    .simpBookmarkText {
+      width: 350px;
+      height: auto;
+    }
+  
+    .tabDiv {
+      width: 100%;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .tabs {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .tabContent {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .tabPrgrph {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .tabPrgrph p {
+      width: 600px;
+    }
+  
+    .tabContent-img img {
+      width: 350px;
+      height: auto;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .tabDiv::before {
+      content: '';
+      position: absolute;
+      top: 1100px;
+      left: 0;
+      width: 300px;
+      height: 200px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .downloadText {
+      width: 100%;
+    }
+  
+    .downloadText p {
+      width: 600px;
+    }
+  
+    .question {
+      width: 100%;
+      height: 650px;
+      margin: 0;
+      padding: 0px 0px 0px 0px;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+  
+    .question p {
+      width: 600px;
+    }
+  
+    .tabLinks1 {
+      width: 600px;
+    }
+  
+    .button-wrap1 p {
+      text-align: left;
+    }
+  
+    .button-wrap1 {
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .but {
+      margin-left: -70px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media screen and (max-width:800px) {
+    .tabDiv::before {
+      content: '';
+      position: absolute;
+      top: 450px;
+      left: 0;
+      width: 400px;
+      height: 250px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .tabDiv {
+      width: 100%;
+      height: auto;
+      transform: translateX(10%);
+      margin-top: 50px;
+    }
+  
+    .tabs {
+      margin-left: -40px;
+    }
+  
+    .tabContent-img img {
+      width: 400px;
+      height: auto;
+      margin-bottom: 80px;
+    }
+  
+    .tab {
+      /* display: grid;
+          grid-template-columns: 1fr;
+          grid-auto-rows: auto; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    .tabContent-wrap {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    .but .blue.btn {
+      margin: 0;
+      margin-left: -100px;
+    }
+  
+    .tab button {
+      background: transparent;
+      cursor: pointer;
+      outline: none;
+      transition: all .5s ease;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: none;
+      margin: 0;
+    }
+  
+    .tab-links {
+      background: transparent;
+    }
+  
+    .tabContent-des {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tabContent-des p {
+      text-align: center;
+    }
+  
+    .but {
+      margin-left: 0px;
+      margin-bottom: 80px;
+      text-align: center;
+    }
+  
+    .download {
+      margin-top: 50px;
+      height: 1200px;
+      z-index: 999;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 40px;
+    }
+  
+    .card {
+      margin-bottom: 40px;
+      background: #fff;
+    }
+  
+    .card:first-child {
+      align-self: center;
+    }
+  
+    .card:nth-child(2) {
+      align-self: center;
+      margin-left: -40px;
+    }
+  
+    .card:last-child {
+      align-self: center;
+      margin-left: -40px;
+    }
+  
+    .tabDiv {
+      margin-left: -100px;
+    }
+  
+    .simpBookmark {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width:700px) {
+    nav ul li a {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  
+    nav ul li a.red.btn {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  
+    .simpleBookmark {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .simpImg {
+      margin: 0;
+      width: 90%;
+      height: auto;
+    }
+  
+    .simpBookmarkText {
+      width: 90%;
+      margin-right: 40px;
+    }
+  
+    .tabDiv::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 400px;
+      height: 250px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .tabDiv {
+      margin-top: -20px;
+      width: 90%;
+    }
+  
+    .tabPrgrph p {
+      width: 450px;
+    }
+  
+    .tabPrgrph {
+      margin-left: 170px;
+    }
+  
+    .tabDiv::before {
+      content: '';
+      position: absolute;
+      top: 500px;
+      left: 0;
+      width: 300px;
+      height: 250px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .tabs {
+      margin-left: 135px;
+    }
+  
+    .tabContent {
+      margin-top: 40px;
+      margin-left: -50px;
+    }
+  
+    .tabContent-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .downloadText p {
+      width: 450px;
+      margin: 0;
+    }
+  
+    .download {
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+  
+    .questionText p {
+      width: 450px;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+  
+    .question {
+      width: 90%;
+    }
+  
+    .cards {
+      margin-top: 40px;
+    }
+  
+    .tabContent1 p {
+      width: 450px;
+    }
+  
+    .divForms {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .divForms .red.btn {
+      width: 230px;
+      padding: 7px 12px;
+      margin-left: -7px;
+      margin-top: 10px;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  
+    .tab button {
+      border-bottom: 1px solid var(--grayishBlue);
+    }
+  
+    .but .blue.btn {
+      margin-left: 10px;
+    }
+  
+    .footerTop {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .bookmark {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bookmark ul.flex {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .bookmark ul.flex li {
+      margin-bottom: 20px;
+    }
+  
+    .bookmark .logo {
+      margin-bottom: 20px;
+    }
+  
+    .footerTop .social.flex {
+      margin-left: 20px;
+    }
+  }
+  
+  @media screen and (max-width:540px) {
+    .hamburger {
+      display: block;
+      z-index: 999;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  
+    .hamburger.show {
+      display: block;
+    }
+  
+    .hamburgerImg.show {
+      width: 18px;
+      height: 15px;
+      background: url('../images/icon-hamburger.svg') no-repeat center center/cover;
+    }
+  
+    nav .logo {
+      z-index: 999;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+    }
+  
+    .menuDiv {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100px;
+      left: 40px;
+    }
+  
+    .menu::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -40px;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--veryDarkBlue);
+      opacity: 0.9;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  
+    nav {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .menu.flex {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: -60px;
+    }
+  
+    .menu.flex li {
+      width: 100vw;
+      height: 12vh;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    .menu.flex li:first-child::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 30px;
+      width: 350px;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .menu.flex li:nth-child(2)::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 30px;
+      width: 350px;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .menu.flex li:nth-child(3)::before {
+      content: '';
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      width: 350px;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .menu.flex li:nth-child(4)::before {
+      content: '';
+      position: absolute;
+      top: 220px;
+      left: 30px;
+      width: 350px;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .simpImg {
+      margin-top: 50px;
+    }
+  
+    .logo.change {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(244deg) brightness(105%) contrast(101%);
+    }
+  
+    .menu.flex li a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+  
+    .menu.flex li .red.btn {
+      font-size: 18px;
+      font-weight: 500;
+      background-color: transparent;
+      margin-left: 40px;
+      margin-right: 40px;
+      width: 80%;
+      border: 2px solid #fff;
+    }
+  
+    .tabContent-des {
+      margin-top: 40px;
+    }
+  
+    .download {
+      margin-left: 0px;
+    }
+  
+    .downloadText p {
+      width: 350px;
+      text-align: center;
+    }
+  
+    .question {
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+    }
+  
+    .questionText p {
+      margin: 0;
+      margin-left: 30px;
+      width: 340px;
+    }
+  
+    .questionText h2 {
+      margin: 0;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+  
+    .tabContent-des1 p {
+      width: 340px;
+      margin-left: 30px;
+    }
+  
+    .tabLinks1 {
+      margin-left: 30px;
+    }
+  
+    .headings h2 {
+      font-size: 22px;
+      width: 340px;
+      text-align: center;
+    }
+  
+    .simpleBookmark::after {
+      content: '';
+      position: absolute;
+      top: 170px;
+      right: 0;
+      width: 300px;
+      height: 200px;
+      border-top-left-radius: 600px;
+      border-bottom-left-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .menuDiv 
+    {
+      display: none;
+    }
+  
+    .menuDiv.show 
+    {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    .menuDiv.show {
+      display: flex;
+    }
+  
+    .logo {
+      display: block;
+    }
+  
+    .simpleBookmark::after {
+      content: '';
+      position: absolute;
+      top: 170px;
+      right: 0;
+      width: 200px;
+      height: 120px;
+      border-top-left-radius: 600px;
+      border-bottom-left-radius: 600px;
+      background-color: var(--softBlue);
+      z-index: -1;
+    }
+  
+    .simpleBookmark {
+      margin-top: 50px;
+    }
+  
+    .menu li {
+      width: 80vw;
+    }
+  
+    .menu {
+      margin-left: -50px;
+    }
+  
+    .menu.flex li:first-child::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0px;
+      width: 80vw;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .menu.flex li:nth-child(2)::before {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      width: 80vw;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .menu.flex li:nth-child(3)::before {
+      content: '';
+      position: absolute;
+      top: 150px;
+      left: 0px;
+      width: 80vw;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .menu.flex li:nth-child(4)::before {
+      content: '';
+      position: absolute;
+      top: 220px;
+      left: 0px;
+      width: 80vw;
+      height: 1px;
+      background-color: var(--grayishBlue);
+      color: var(--grayishBlue);
+    }
+  
+    .simpleBookmarkText h1 {
+      font-size: 26px;
+      text-align: center;
+    }
+  
+    .simpleBookmarkText {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .simpleBookmark {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .simpleBookmarkText .btn {
+      font-size: 8px;
+    }
+  
+    .tabPrgrph p {
+      width: 260px;
+    }
+  
+    .tabContent-img img {
+      width: 100%;
+      height: auto;
+      margin-left: 60px;
+      margin-bottom: 60px;
+    }
+  
+    .tabContent-des p {
+      width: 260px;
+    }
+  
+    .tabContent-des h4 
+    {
+      text-align: center;
+    }
+  
+    .card 
+    {
+      width: 260px;
+    }
+  
+    .question p 
+    {
+      font-size: 15px;
+    }
+  
+    .questionText p
+    {
+      width: 260px;
+      margin: 0;
+      margin-left: 20px;
+    }
+  
+    .tabLinks1{
+      margin: 0;
+    }
+  
+    .tabContent-des1 p 
+    {
+      margin: 0;
+      width: 300px;
+    }
+  }
+  
