@@ -5,6 +5,7 @@ const hamburger=document.querySelector('.hamburger');
 const logo=document.querySelector('.logo');
 const menuDiv=document.querySelector('.menuDiv');
 
+
 function showHamburger(){
   const menuDiv=document.querySelector('.menuDiv');
   const hamburgerImg=document.querySelector('.hamburgerImg');
@@ -25,6 +26,8 @@ hamburger.addEventListener('click',(a)=>{
         changeIcon(a);
         showHamburger();
 });
+
+
 
 
 /* TABS */
@@ -52,9 +55,13 @@ tabButton.forEach(tab => {
 
 /* ACCORDİON */
 
+
 // Get accordion all button element
 let tabButton1 = document.querySelectorAll('.tabLinks1');
 let tabContent1 = document.querySelectorAll('.tabContent1');
+
+
+
 
 // Hide content function
 const hideContent1 = () => {
@@ -73,8 +80,10 @@ tabButton1.forEach(tab => {
 
 
 /* E-MAİL CORRECTION */
+
 const emailAlert=document.querySelector('.emailAlert');
 const inputValid=document.querySelector('.inputValid');
+
 
 function emailValidate(){
   const eMail=document.querySelector('.emailCorrection').value;

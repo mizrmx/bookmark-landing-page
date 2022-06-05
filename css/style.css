@@ -1,1739 +1,1622 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-:root
-{
-    --white: hsl(1, 0%, 100%);
-    --soft-blue: hsl(231, 69%, 60%);
-    --soft-red: hsl(0, 94%, 66%);
-    --grayish-blue: hsl(229, 8%, 60%);
-    --very-dark-blue: hsl(229, 31%, 21%);
+:root {
+  --softBlue: hsl(231, 69%, 60%);
+  --softRed: hsl(0, 94%, 66%);
+  --grayishBlue: hsl(229, 8%, 60%);
+  --veryDarkBlue: hsl(229, 31%, 21%);
 }
 
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
 }
 
-body 
-{
-    font-family: 'Rubik', sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.simpBookmarkText {
+  flex-direction: column;
+}
+
+.tabDiv {
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  object-fit: cover;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.blue.btn:hover {
+  background-color: white;
+  color: var(--softBlue);
+  border: 2px solid var(--softBlue);
+}
+
+.red.btn:hover {
+  background-color: white;
+  color: var(--softRed);
+  border: 2px solid var(--softRed);
+}
+
+.blue {
+  background-color: var(--softBlue);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+}
+
+.red {
+  background-color: var(--softRed);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tabPrgrph {
+  flex-direction: column;
+}
+
+.download {
+  flex-direction: column;
+}
+
+.downloadText {
+  flex-direction: column;
+}
+
+.card {
+  flex-direction: column;
+}
+
+.contact {
+  flex-direction: column;
+}
+
+.headings {
+  flex-direction: column;
+}
+
+.inputValid {
+  flex-direction: column;
+}
+
+nav ul.flex li a {
+  text-transform: uppercase;
+  color: var(--veryDarkBlue);
+}
+
+nav ul.flex li a:hover {
+  color: var(--softRed);
+  cursor: pointer;
+}
+
+.red.btn {
+  color: #fff;
+}
+
+.red.btn:hover {
+  color: var(--softRed);
+  background-color: white;
+  border: 2px solid var(--softRed);
+}
+
+h1 {
+  font-size: 3em;
+  color: var(--veryDarkBlue);
+}
+
+h3, h4 {
+  color: var(--veryDarkBlue);
+}
+
+p {
+  color: var(--grayishBlue);
+  line-height: 1.5em;
+}
+
+.buts {
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questionText {
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+
+.questionAccordion {
+  width: 50%;
+}
+
+.questionText h2 {
+  color: var(--veryDarkBlue);
+  margin-bottom: 20px;
+}
+
+.but {
+  margin-top: 20px;
+}
+
+.bookmark.flex {
+  align-items: center;
+}
+
+.tab1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tabContent-wrap1 {
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+}
+
+.tab1 button {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: all .5s ease;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+}
+
+.tab-links1 {
+  background: transparent;
+}
+
+.accordionIcon {
+  margin-top: 10px;
+  text-align: right;
+}
+
+button.tab-links1:first-child {
+  border-top: 1px solid #999;
+}
+
+.button-wrap1 p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--veryDarkBlue);
+  font-weight: 500;
+  transition: color .2s ease;
+  border: none;
+}
+
+.button-wrap1:hover p {
+  color: var(--softRed);
+}
+
+.button-wrap1 .accordionIcon {
+  width: auto;
+  height: 7px;
+  object-fit: cover;
+}
+
+.button-wrap1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab1 button:hover h4 {
+  opacity: 1;
+}
+
+/* Tab Content */
+.tabContent1 {
+  display: none;
+  height: auto;
+}
+
+.showContent1 {
+  display: block;
+}
+
+.tabContent-des1 {
+  height: auto;
+}
+
+.tabContent-wrap1 {
+  height: auto;
+}
+
+.tabContent-des1 h4 {
+  color: var(--veryDarkBlue);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.tabContent-des1 p {
+  width: 100%;
+  height: auto;
+  color: var(--grayishBlue);
+  margin-bottom: 20px;
+}
+
+.contact {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact h3, h5 {
+  color: white;
+  text-align: center;
+  font-weight: none;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact h5 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.emailAlert.show {
+  display: block;
+}
+
+@media screen and (max-width:1440px) {
+  .question {
+    padding: 60px 165px;
+  }
+
+  nav {
+    padding: 60px 165px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul.flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .simpleBookmark {
+    padding: 60px 0px 60px 165px;
+  }
+
+  .simpleBookmark .blue.btn {
+    padding: 7px 15px;
+    font-weight: 500;
+    text-align: center;
     font-size: 18px;
-    overflow-x: hidden;
-}
+  }
 
-p, h1, h2, h3, h4, h5, h6 
-{
-    margin: 0;
-}
-  
-ul, li 
-{
-    list-style: none;
-}
+  .simpleBookmark .lightGrey.btn {
+    padding: 7px 15px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    background: #e5e5e5;
+  }
 
-a 
-{
-    text-decoration: none;
-}
-  
-.flex 
-{
-    display: flex;
-}
-  
-.container 
-{
-    display: flex;
-    flex-direction: column;
-}
+  .simpleBookmark .lightGrey.btn:hover {
+    border: 2px solid var(--grayishBlue);
+  }
 
-main 
-{
-    display: flex;
-    flex-direction: column;
-}
-  
-footer 
-{
-    display: flex;
-    flex-direction: column;
-}
-  
-.simpBookmarkText 
-{
-    flex-direction: column;
-}
-  
-.tabDiv 
-{
+  .simpleBookmark::after {
+    content: '';
+    position: absolute;
+    top: 340px;
+    right: 0;
+    width: 400px;
+    height: 350px;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .simpBookmarkText {
+    margin-top: 50px;
+  }
+
+  .simpBookmarkText .buts .blue.btn {
+    margin-right: 15px;
+  }
+
+  .simpBookmarkText button.btn {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .simpBookmarkText h1 {
+    margin-bottom: 20px;
+  }
+
+  .simpBookmarkText p {
+    margin-bottom: 20px;
+    line-height: 1.7em;
+    color: var(--grayishBlue);
+  }
+
+  .simpBookmarkText .btn {
+    width: 160px;
+  }
+
+  .simpBookmarkText .btn:hover {
+    border: 1px solid var(--grayishBlue);
+    color: var(--grayishBlue);
+    background: white;
+    cursor: pointer;
+  }
+
+  .simpBookmarkText .btn.blue:hover {
+    border: 2px solid var(--softBlue);
+    color: var(--softBlue);
+    background: white;
+    cursor: pointer;
+  }
+
+  .tabDiv {
+    width: 1440px;
+    height: 800px;
+    ;
+    max-width: 1440px;
+    padding: 60px 165px 60px 0px;
+  }
+
+  .tabDiv::before {
+    content: '';
+    position: absolute;
+    top: 1200px;
+    left: 0;
+    width: 400px;
+    height: 350px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .tabPrgrph {
     flex-direction: column;
     align-items: center;
-}
-  
-.btn 
-{
-    display: inline-block;
+  }
+
+  .tabPrgrph h3 {
+    margin-bottom: 20px;
+  }
+
+  .tabPrgrph p {
+    margin-bottom: 40px;
+    width: 40%;
+    text-align: center;
+  }
+
+  .download {
+    padding: 60px 165px;
+  }
+
+  .download img.social {
+    display: block;
+    width: auto;
+    height: 100px;
     object-fit: cover;
-    padding: 7px 15px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-}
-  
-.blue.btn:hover 
-{
-    background-color:var(--white);
-    color: var(--soft-blue);
-    border: 2px solid var(--soft-blue);
-}
-  
-.red.btn:hover 
-{
-    background-color: var(--white);
-    color: var(--soft-red);
-    border: 2px solid var(--soft-red);
-}
-  
-.blue 
-{
-    background-color: var(--soft-blue);
-    color: var(--white);
-    font-weight: 500;
-    text-align: center;
-    font-size: 18px;
-}
-  
-.red 
-{
-    background-color: var(--soft-red);
-    color: var(--white);
-    font-weight: 500;
-    text-align: center;
-    font-size: 18px;
-}
-  
-.tabPrgrph
-{
-    flex-direction: column;
-}
-  
-.download 
-{
-    flex-direction: column;
-}
-  
-.downloadText 
-{
-    flex-direction: column;
-}
-  
-.card 
-{
-    flex-direction: column;
-}
-  
-.contact 
-{
-    flex-direction: column;
-}
-  
-.headings 
-{
-    flex-direction: column;
-}
-  
-.inputValid 
-{
-    flex-direction: column;
-}
-  
-nav ul.flex li a 
-{
-    text-transform: uppercase;
-    color: var(--very-dark-blue);
-}
-  
-nav ul.flex li a:hover 
-{
-    color: var(--soft-red);
-    cursor: pointer;
-}
-  
-.red.btn 
-{
-    color: #fff;
-}
-  
-.red.btn:hover 
-{
-    color: var(--soft-red);
-    background-color: var(--white);
-    border: 2px solid var(--soft-red);
-}
-  
-h1 
-{
-    font-size: 3em;
-    color: var(--very-dark-blue);
-}
-  
-h3, h4 
-{
-    color: var(--very-dark-blue);
-}
-  
-p 
-{
-    color: var( --grayish-blue);
-    line-height: 1.5em;
-}
-  
-.buts 
-{
-    display: flex;
-    font-size: 20px;
-    font-weight: 500;
-}
-  
-.center 
-{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-  
-.question 
-{
-    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .download img.dot {
+    height: 4px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .cards {
+    justify-content: center;
+    height: 400px;
+  }
+
+  .card {
+    padding-top: 25px;
+    padding-bottom: 25px;
     align-items: center;
     justify-content: space-between;
-}
-  
-.questionText 
-{
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px -1px rgba(119, 119, 119, 1);
+  }
+
+  .card p {
+    margin-bottom: 30px;
+  }
+
+  .card .btn {
+    margin-top: 20px;
+  }
+
+  .card:first-child {
+    margin-right: 40px;
+    align-self: flex-start;
+  }
+
+  .card:nth-child(2) {
+    align-self: center;
+  }
+
+  .card:last-child {
+    align-self: flex-end;
+    margin-left: 40px;
+  }
+
+  .downloadText {
     flex-direction: column;
-    width: 50%;
-    text-align: center;
-}
-  
-.questionAccordion 
-{
-    width: 50%;
-}
-  
-.questionText h2 
-{
-    color: var(--very-dark-blue);
-    margin-bottom: 20px;
-}
-  
-.but 
-{
-    margin-top: 20px;
-}
-  
-.bookmark.flex 
-{
     align-items: center;
+  }
+
+  .downloadText h3 {
+    margin-bottom: 30px;
+  }
+
+  .downloadText p {
+    margin-bottom: 40px;
+    width: 40%;
+    text-align: center;
+  }
+
+  .card .btn:hover {
+    background-color: white;
+    color: var(--softBlue);
+    border: 2px solid var(--softBlue);
+  }
+
+  /* Tab Button */
+  .tab {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin-left: 40px;
+  }
+
+  .tab button {
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease;
+    margin-bottom: 100px;
+    margin-right: 40px;
+    border-bottom: 0.5px solid var(--grayishBlue);
+  }
+
+  .tab button:hover {
+    background: #fff;
+    border-bottom: 5px solid var(--softRed);
+  }
+
+  .tab button h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-style: none;
+    font-weight: none;
+    color: var(--grayishBlue);
+  }
+
+  .tab button:hover h4 {
+    opacity: 1;
+  }
+
+  /* Tab Content */
+  .tabContent {
+    display: none;
+  }
+
+  .showContent {
+    display: block;
+  }
+
+  .tabContent-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+  }
+
+  .tabContent-des h4 {
+    color: var(--veryDarkBlue);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .tabContent-des p {
+    width: 400px;
+    color: var(--grayishBlue);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .tabContent-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .tabContent-des {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tabContent-img img {
+    width: 536px;
+    height: auto;
+    margin-right: 120px;
+  }
+
+  .contact {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: var(--softBlue);
+    color: white;
+  }
+
+  .emailCorrection {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 230px;
+  }
+
+  .inputValid {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+  }
+
+  .inputValid p {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    display: none;
+  }
+
+  footer {
+    background-color: var(--veryDarkBlue);
+    padding: 35px 165px 10px 165px;
+    justify-content: center;
+    align-items: space-between;
+  }
+
+  .footerTop {
+    justify-content: space-between;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footerTop ul.flex {
+    margin-left: 50px;
+  }
+
+  .footerTop ul.flex li a {
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: #fff;
+  }
+
+  .footerTop ul.flex li a:hover {
+    color: tomato;
+  }
+
+  footer .social img:first-child {
+    margin-right: 20px;
+  }
+
+  .filterIcon:hover {
+    filter: invert(42%) sepia(34%) saturate(1085%) hue-rotate(314deg) brightness(107%) contrast(105%);
+  }
+
+  .footerBottom {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    justify-content: center;
+  }
 }
-  
-.tab1 
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+
+@media screen and (max-width:1300px) {
+  nav {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .simpleBookmark {
+    padding: 60px 0px 60px 100px;
+  }
+
+  .tabDiv {
+    padding: 60px 100px 60px -65px;
+  }
+
+  footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .question {
+    padding: 60px 100px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .tabDiv {
+    padding: 60px 50px 60px -135px;
+  }
+
+  .question {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .tabDiv {
+    padding: 60px 50px 60px -175px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .tabDiv {
+    padding: 60px 50px 60px -175px;
+  }
+
+  .tabContent-img {
+    margin-left: -100px;
+  }
+
+  .tabs {
+    margin-left: -150px;
+  }
+
+  .tabContent-img img {
+    width: 400px;
+    height: auto;
+  }
+
+  .tabContent-des {
+    margin-left: -20px;
+  }
+
+  .simpleBookmark .blue.btn {
+    font-size: 14px;
+  }
+
+  .download .blue.btn {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .simpleBookmark .lightGrey.btn {
+    font-size: 14px;
+  }
+
+  .tabPrgrph {
+    margin-left: -150px;
+  }
+
+  .card.social {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  nav {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .simpleBookmark {
+    padding: 60px 0px 60px 50px;
+  }
+
+  .tabDiv {
+    padding: 60px 50px 60px -65px;
+  }
+
+  footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .simpImg {
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .simpBookmarkText h1 {
+    font-size: 2em;
+  }
+
+  .tabDiv {
+    margin-left: -60px;
+  }
+
+  .tabContent-img img {
+    width: 400px;
+    height: auto;
+  }
+
+  .simpleBookmark::after {
+    content: '';
+    position: absolute;
+    top: 400px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .tabDiv::before {
+    content: '';
+    position: absolute;
+    top: 1200px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .download {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .question {
+    width: 100%;
+  }
+
+  .questionText {
+    width: 80%;
+  }
+
+  .questionAccordion {
+    width: 80%;
+  }
+
+  .button-wrap1 {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button.tabLinks1 {
+    width: 600px;
+  }
+
+  .button-wrap1 {
+    width: 600px;
+  }
+
+  .button-wrap1 p {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .simpImg {
+    width: 360px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+
+  .simpBookmarkText {
+    width: 350px;
+    height: auto;
+  }
+
+  .tabDiv {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabContent {
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabPrgrph {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabPrgrph p {
+    width: 600px;
+  }
+
+  .tabContent-img img {
+    width: 350px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .tabDiv::before {
+    content: '';
+    position: absolute;
+    top: 1100px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .downloadText {
+    width: 100%;
+  }
+
+  .downloadText p {
+    width: 600px;
+  }
+
+  .question {
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .question p {
+    width: 600px;
+  }
+
+  .tabLinks1 {
+    width: 600px;
+  }
+
+  .button-wrap1 p {
+    text-align: left;
+  }
+
+  .button-wrap1 {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .but {
+    margin-left: -70px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .tabDiv::before {
+    content: '';
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 400px;
+    height: 250px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .tabDiv {
+    width: 100%;
+    height: auto;
+    transform: translateX(10%);
+    margin-top: 50px;
+  }
+
+  .tabs {
+    margin-left: -40px;
+  }
+
+  .tabContent-img img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 80px;
+  }
+
+  .tab {
+    /* display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
-}
-  
-.tabContent-wrap1 
-{
+  }
+
+  .tabContent-wrap {
     width: 100%;
     flex-direction: column;
     height: auto;
     align-items: center;
-}
-  
-.tab1 button 
-{
+  }
+
+  .but .blue.btn {
+    margin: 0;
+    margin-left: -100px;
+  }
+
+  .tab button {
     background: transparent;
     cursor: pointer;
     outline: none;
     transition: all .5s ease;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: none;
-}
-  
-.tab-links1 
-{
-    background: transparent;
-}
-  
-.accordionIcon 
-{
-    margin-top: 10px;
-    text-align: right;
-}
-  
-button.tab-links1:first-child 
-{
-    border-top: 1px solid #999;
-}
-  
-.button-wrap1 p 
-{
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--very-dark-blue);
-    font-weight: 500;
-    transition: color .2s ease;
-    border: none;
-}
-  
-.button-wrap1:hover p 
-{
-    color: var(--soft-red);
-}
-  
-.button-wrap1 .accordionIcon 
-{
-    width: auto;
-    height: 7px;
-    object-fit: cover;
-}
-  
-.button-wrap1 
-{
-    display: flex;
-    justify-content: space-between;
-}
-  
-.tab1 button:hover h4 
-{
-    opacity: 1;
-}
+    margin: 0;
+  }
 
-  /* Tab Content */
- .tabContent1 
- {
-    display: none;
-    height: auto;
-}
-  
-.showContent1 
-{
-    display: block;
-}
-  
-.tabContent-des1 
-{
-    height: auto;
-}
-  
-.tabContent-wrap1 
-{
-    height: auto;
-}
-  
-.tabContent-des1 h4 
-{
-    color: var(--very-dark-blue);
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-}
-  
-.tabContent-des1 p 
-{
-    width: 100%;
-    height: auto;
-    color: var( --grayish-blue);
-    margin-bottom: 20px;
-}
-  
-.contact 
-{
+  .tab-links {
+    background: transparent;
+  }
+
+  .tabContent-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabContent-des p {
+    text-align: center;
+  }
+
+  .but {
+    margin-left: 0px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .download {
+    margin-top: 50px;
+    height: 1200px;
+    z-index: 999;
+  }
+
+  .cards {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-left: 40px;
+  }
+
+  .card {
+    margin-bottom: 40px;
+    background: #fff;
+  }
+
+  .card:first-child {
+    align-self: center;
+  }
+
+  .card:nth-child(2) {
+    align-self: center;
+    margin-left: -40px;
+  }
+
+  .card:last-child {
+    align-self: center;
+    margin-left: -40px;
+  }
+
+  .tabDiv {
+    margin-left: -100px;
+  }
+
+  .simpBookmark {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
-  
-.contact h3, h5 
-{
-    color: var(--white);
-    text-align: center;
-    font-weight: none;
-}
-  
-.contact h2 
-{
+
+@media screen and (max-width:700px) {
+  nav ul li a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  nav ul li a.red.btn {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .simpleBookmark {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .simpImg {
+    margin: 0;
+    width: 90%;
+    height: auto;
+  }
+
+  .simpBookmarkText {
+    width: 90%;
+    margin-right: 40px;
+  }
+
+  .tabDiv::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 400px;
+    height: 250px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .tabDiv {
+    margin-top: -20px;
+    width: 90%;
+  }
+
+  .tabPrgrph p {
+    width: 450px;
+  }
+
+  .tabPrgrph {
+    margin-left: 170px;
+  }
+
+  .tabDiv::before {
+    content: '';
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    border-top-right-radius: 600px;
+    border-bottom-right-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .tabs {
+    margin-left: 135px;
+  }
+
+  .tabContent {
+    margin-top: 40px;
+    margin-left: -50px;
+  }
+
+  .tabContent-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .downloadText p {
+    width: 450px;
+    margin: 0;
+  }
+
+  .download {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .questionText p {
+    width: 450px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .question {
+    width: 90%;
+  }
+
+  .cards {
+    margin-top: 40px;
+  }
+
+  .tabContent1 p {
+    width: 450px;
+  }
+
+  .divForms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divForms .red.btn {
+    width: 230px;
+    padding: 7px 12px;
+    margin-left: -7px;
+    margin-top: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .tab button {
+    border-bottom: 1px solid var(--grayishBlue);
+  }
+
+  .but .blue.btn {
+    margin-left: 10px;
+  }
+
+  .footerTop {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bookmark {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bookmark ul.flex {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .bookmark ul.flex li {
     margin-bottom: 20px;
-}
-  
-.contact h5 
-{
+  }
+
+  .bookmark .logo {
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  }
+
+  .footerTop .social.flex {
+    margin-left: 20px;
+  }
 }
-  
-.emailAlert.show 
-{
+
+@media screen and (max-width:540px) {
+  .hamburger {
     display: block;
+    z-index: 999;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  .hamburger.show {
+    display: block;
+  }
+
+  .hamburgerImg.show {
+    width: 18px;
+    height: 15px;
+    background: url('../images/icon-hamburger.svg') no-repeat center center/cover;
+  }
+
+  nav .logo {
+    z-index: 999;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .menuDiv {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+  }
+
+  .menu::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -40px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--veryDarkBlue);
+    opacity: 0.9;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu.flex {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -60px;
+  }
+
+  .menu.flex li {
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .menu.flex li:first-child::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 350px;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
+
+  .menu.flex li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 350px;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
+
+  .menu.flex li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 350px;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
+
+  .menu.flex li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    width: 350px;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
+
+  .simpImg {
+    margin-top: 50px;
+  }
+
+  .logo.change {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(244deg) brightness(105%) contrast(101%);
+  }
+
+  .menu.flex li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .menu.flex li .red.btn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 80%;
+    border: 2px solid #fff;
+  }
+
+  .tabContent-des {
+    margin-top: 40px;
+  }
+
+  .download {
+    margin-left: 0px;
+  }
+
+  .downloadText p {
+    width: 350px;
+    text-align: center;
+  }
+
+  .question {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .questionText p {
+    margin: 0;
+    margin-left: 30px;
+    width: 340px;
+  }
+
+  .questionText h2 {
+    margin: 0;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  .tabContent-des1 p {
+    width: 340px;
+    margin-left: 30px;
+  }
+
+  .tabLinks1 {
+    margin-left: 30px;
+  }
+
+  .headings h2 {
+    font-size: 22px;
+    width: 340px;
+    text-align: center;
+  }
+
+  .simpleBookmark::after {
+    content: '';
+    position: absolute;
+    top: 170px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
+
+  .menuDiv {
+    display: none;
+  }
+
+  .menuDiv.show {
+    display: flex;
+  }
 }
 
-@media screen and (max-width: 1440px) {
-    .question 
-    {
-        padding: 60px 165px;
-    }
+@media screen and (max-width:375px) {
+  .menuDiv.show {
+    display: flex;
+  }
 
-    nav 
-    {
-        padding: 60px 165px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav ul .flex 
-    {
-        justify-content: space-between;
-        align-items: center;
-    }
+  .logo {
+    display: block;
+  }
 
-    nav ul li 
-    {
-        margin-left: 20px;
-    }
+  .simpleBookmark::after {
+    content: '';
+    position: absolute;
+    top: 170px;
+    right: 0;
+    width: 200px;
+    height: 120px;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius: 600px;
+    background-color: var(--softBlue);
+    z-index: -1;
+  }
 
-    .hamburger
-    {
-        display: none;
-    }
+  .simpleBookmark {
+    margin-top: 50px;
+  }
 
-    .simpleBookmark 
-    {
-        padding: 60px 0px 60px 165px;
-    }
+  .menu li {
+    width: 80vw;
+  }
 
-    .simpleBookmark .blue .btn 
-    {
-        padding: 7px 15px;
-        font-weight: 500;
-        text-align: center;
-        font-size: 18px;
-    }
+  .menu {
+    margin-left: -50px;
+  }
 
-    .simpleBookmark .lightGrey.btn
-    {
-        padding: 7px 15px;
-        font-weight: 500;
-        text-align: center;
-        font-size: 18px;
-        background: #E5E5E5;
-    }
+  .menu.flex li:first-child::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 80vw;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
 
-    .simpleBookmark .lightGrey.btn:hover 
-    {
-        border: 2px solid var( --grayish-blue)
-    }
+  .menu.flex li:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 80vw;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
 
-    .simpleBookmark::after
-    {
-        content: '';
-        position: absolute;
-        top: 340px;
-        right: 0;
-        width: 400px;
-        height: 350px;
-        border-top-left-radius: 600px;
-        border-bottom-left-radius: 600px;
-        background-color: var(--soft-blue);
-        z-index: -1;
-    }
+  .menu.flex li:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 80vw;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
 
-    .simpBookmarkText 
-    {
-        margin-top: 50px;
-    }
+  .menu.flex li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 220px;
+    left: 0px;
+    width: 80vw;
+    height: 1px;
+    background-color: var(--grayishBlue);
+    color: var(--grayishBlue);
+  }
 
-    .simpBookmarkText .buts .blue.btn
-    {
-        margin-right: 15px;
-    }
+  .simpleBookmarkText h1 {
+    font-size: 26px;
+    text-align: center;
+  }
 
-    .simpBookmarkText button.btn
-    {
-        font-size: 15px;
-        font-weight: 500;
-        width: 100%;
-    }
+  .simpleBookmarkText {
+    align-items: center;
+    text-align: center;
+  }
 
-    .simpBookmarkText h1
-    {
-        margin-bottom: 20px;
-    }
+  .simpleBookmark {
+    align-items: center;
+    text-align: center;
+  }
 
-    .simpBookmarkText p
-    {
-        margin-bottom: 20px;
-        line-height: 1.7em;
-        color: var(--grayish-blue);
-    }
+  .simpleBookmarkText .btn {
+    font-size: 8px;
+  }
 
-    .simpBookmarkText .btn
-    {
-        width: 160px;
-    }
+  .tabPrgrph p {
+    width: 260px;
+  }
 
-    .simpBookmarkText .btn:hover
-    {
-        border: 1px solid var(--grayish-blue);
-        color: var(--grayish-blue);
-        background: var(--white);
-        cursor: pointer;
-    }
+  .tabContent-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
 
-    .simpBookmarkText .btn.blue:hover
-    {
-        border: 2px solid var(--soft-blue);
-        color: var(--soft-blue);
-        background: var(--white);
-        cursor: pointer;
-    }
+  .tabContent-des p {
+    width: 260px;
+  }
 
-    .tabDiv
-    {
-        width: 1440px;
-        height: 800px;
-        max-width: 1440px;
-        padding: 60px 165px 60px 0px;
-    }
+  .tabContent-des h4 {
+    text-align: center;
+  }
 
-    .tabDiv::before
-    {
-        content: '';
-        position: absolute;
-        top: 1200px;
-        right: 0;
-        width: 400px;
-        height: 350px;
-        border-top-left-radius: 600px;
-        border-bottom-left-radius: 600px;
-        background-color: var(--soft-blue);
-        z-index: -1;
-    }
+  .card {
+    width: 260px;
+  }
 
-    .tabPrgrph
-    {
-        flex-direction: column;
-        align-items: center;
-    }
+  .question p {
+    font-size: 15px;
+  }
 
-    .tabPrgrph h3 
-    {
-        margin-bottom: 20px;
-    }
+  .questionText p {
+    width: 260px;
+    margin: 0;
+    margin-left: 20px;
+  }
 
-    .tabPrgrph p 
-    {
-        margin-bottom: 40px;
-        width: 40%;
-        text-align: center;
-    }
+  .tabLinks1 {
+    margin: 0;
+  }
 
-    .download
-    {
-        padding: 60px 165px;
-    }
-
-    .download img.social
-    {
-        display: block;
-        width: auto;
-        height: 100px;
-        object-fit: cover;
-        margin-bottom: 30px;
-    }
-
-    .download img.dot 
-    {
-        height: 4px;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .cards
-    {
-        justify-content: center;
-        height: 400px;
-    }
-
-    .card
-    {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 15px;
-        box-shadow: 0px 8px 20px -1px rgba(119, 119, 119, 1);
-    }
-
-    .card p 
-    {
-        margin-bottom: 30px;
-    }
-
-    .card .btn 
-    {
-        margin-top: 20px;
-    }
-
-    .card:first-child
-    {
-        margin-right: 40px;
-        align-self: flex-start;
-    }
-
-    .card:nth-child(2)
-    {
-        align-self: center;
-    }
-
-    .card:last-child
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .downloadText 
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .downloadText h3 
-    {
-        margin-bottom: 30px;
-    }
-    
-    .downloadText p 
-    {
-        margin-bottom: 40px;
-        width: 40%;
-        text-align: center;
-    }
-    
-    .card .btn:hover 
-    {
-        background-color: var(--white);
-        color: var(--soft-blue);
-        border: 2px solid var(--soft-blue);
-    }
-
-      /* Tab Button */
-    .tab 
-    {
-        display: flex;
-        justify-content: center;
-        font-family: 'Rubik', sans-serif;
-        font-size: 18px;
-        margin-left: 40px;
-    }
-
-    .tab button 
-    {
-        width: 200px;
-        height: 50px;
-        background: var(--white);
-        border: none;
-        cursor: pointer;
-        outline: none;
-        transition: all .5s ease;
-        margin-bottom: 100px;
-        margin-right: 40px;
-        border-bottom: 0.5px solid var(--grayish-blue);
-    }
-
-    .tab button:hover {
-        background: var(--white);
-        border-bottom: 5px solid var(--soft-red);
-    }
-
-    .tab button h4 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 18px;
-        font-style: none;
-        font-weight: none;
-        color: var(--grayish-blue );
-    }
-
-    .tab button:hover h4 
-    {
-        opacity: 1;
-    }
-
-    /* Tab Content */
-    .tabContent 
-    {
-        display: none;
-    }
-
-    .showContent 
-    {
-        display: block;
-    }
-
-    .tabContent-wrap 
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 100px;
-    }
-
-    .tabContent-des h4 
-    {
-        color: var(--very-dark-blue);
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-    }
-
-    .tabContent-des p {
-        width: 400px;
-        color: var(--grayish-blue);
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    .tabContent-img {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    .tabContent-des {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    .tabContent-img img {
-        width: 536px;
-        height: auto;
-        margin-right: 120px;
-    }
-
-    .contact {
-        padding-top: 75px;
-        padding-bottom: 75px;
-        background-color: var(--soft-blue);
-        color: var(--white);
-    }
-
-    .emailCorrection {
-        border: none;
-        outline: none;
-        padding: 8px;
-        border-radius: 5px;
-        font-weight: 500;
-        font-size: 14px;
-        width: 230px;
-    }
-
-    .inputValid {
-        background-color: transparent;
-        border-radius: 5px;
-        padding: 3px;
-        display: flex;
-        align-items: flex-start;
-        margin-right: 10px;
-    }
-
-    .inputValid p {
-        color: var(--white);
-        font-size: 12px;
-        font-weight: 500;
-        font-style: italic;
-        display: none;
-    }
-
-    footer {
-        background-color: var(--very-dark-blue);
-        padding: 35px 165px 10px 165px;
-        justify-content: center;
-        align-items: space-between;
-    }
-
-    .footerTop {
-        justify-content: space-between;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-    }
-
-    .footerTop ul.flex {
-        margin-left: 50px;
-    }
-
-    .footerTop ul.flex li a {
-        text-transform: uppercase;
-        margin-right: 20px;
-        color: #fff;
-    }
-
-    .footerTop ul.flex li a:hover {
-        color: tomato;
-    }
-
-    footer .social img:first-child {
-        margin-right: 20px;
-    }
-
-    .filterIcon:hover {
-        filter: invert(42%) sepia(34%) saturate(1085%) hue-rotate(314deg) brightness(107%) contrast(105%);
-    }
-
-    .footerBottom {
-        display: flex;
-        align-items: flex-end;
-        margin-top: 20px;
-        justify-content: center;
-    }
+  .tabContent-des1 p {
+    margin: 0;
+    width: 300px;
+  }
 }
-
-@media screen and (max-width: 1300px) {
-    nav 
-    {
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-    
-    .simpleBookmark 
-    {
-        padding: 60px 0px 60px 100px;
-    }
-    
-    .tabDiv 
-    {
-        padding: 60px 100px 60px -65px;
-    }
-    
-    footer 
-    {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    
-    .question 
-    {
-        padding: 60px 100px;
-    }
-}
-
-@media screen and (max-width:1300px) {
-    .tabDiv {
-      padding: 60px 50px 60px -135px;
-    }
-  
-    .question {
-      padding: 60px 50px;
-    }
-  }
-  
-  @media screen and (max-width:1200px) {
-    .tabDiv {
-      padding: 60px 50px 60px -175px;
-    }
-  }
-  
-  @media screen and (max-width:1100px) {
-    .tabDiv {
-      padding: 60px 50px 60px -175px;
-    }
-  
-    .tabContent-img {
-      margin-left: -100px;
-    }
-  
-    .tabs {
-      margin-left: -150px;
-    }
-  
-    .tabContent-img img {
-      width: 400px;
-      height: auto;
-    }
-  
-    .tabContent-des {
-      margin-left: -20px;
-    }
-  
-    .simpleBookmark .blue.btn {
-      font-size: 14px;
-    }
-  
-    .download .blue.btn {
-      font-size: 14px;
-      font-weight: 500;
-    }
-  
-    .simpleBookmark .lightGrey.btn {
-      font-size: 14px;
-    }
-  
-    .tabPrgrph {
-      margin-left: -150px;
-    }
-  
-    .card.social {
-      width: 40px;
-      height: auto;
-    }
-  }
-  
-  @media screen and (max-width:1000px) {
-    nav {
-      padding-right: 50px;
-      padding-left: 50px;
-    }
-  
-    .simpleBookmark {
-      padding: 60px 0px 60px 50px;
-    }
-  
-    .tabDiv {
-      padding: 60px 50px 60px -65px;
-    }
-  
-    footer {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-  
-    .simpImg {
-      width: 500px;
-      height: auto;
-      margin-top: 20px;
-    }
-  
-    .simpBookmarkText h1 {
-      font-size: 2em;
-    }
-  
-    .tabDiv {
-      margin-left: -60px;
-    }
-  
-    .tabContent-img img {
-      width: 400px;
-      height: auto;
-    }
-  
-    .simpleBookmark::after {
-      content: '';
-      position: absolute;
-      top: 400px;
-      right: 0;
-      width: 300px;
-      height: 200px;
-      border-top-left-radius: 600px;
-      border-bottom-left-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .tabDiv::before {
-      content: '';
-      position: absolute;
-      top: 1200px;
-      left: 0;
-      width: 300px;
-      height: 200px;
-      border-top-right-radius: 600px;
-      border-bottom-right-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .download {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-  
-    .question {
-      width: 100%;
-    }
-  
-    .questionText {
-      width: 80%;
-    }
-  
-    .questionAccordion {
-      width: 80%;
-    }
-  
-    .button-wrap1 {
-      width: 600px;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    button.tabLinks1 {
-      width: 600px;
-    }
-  
-    .button-wrap1 {
-      width: 600px;
-    }
-  
-    .button-wrap1 p {
-      width: 600px;
-    }
-  }
-  
-  @media screen and (max-width:900px) {
-    .simpImg {
-      width: 360px;
-      height: auto;
-      margin-top: 80px;
-      margin-left: 40px;
-    }
-  
-    .simpBookmarkText {
-      width: 350px;
-      height: auto;
-    }
-  
-    .tabDiv {
-      width: 100%;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-    }
-  
-    .tabs {
-      margin: 0;
-      padding: 0;
-    }
-  
-    .tabContent {
-      margin: 0;
-      padding: 0;
-    }
-  
-    .tabPrgrph {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  
-    .tabPrgrph p {
-      width: 600px;
-    }
-  
-    .tabContent-img img {
-      width: 350px;
-      height: auto;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-  
-    .tabDiv::before {
-      content: '';
-      position: absolute;
-      top: 1100px;
-      left: 0;
-      width: 300px;
-      height: 200px;
-      border-top-right-radius: 600px;
-      border-bottom-right-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .downloadText {
-      width: 100%;
-    }
-  
-    .downloadText p {
-      width: 600px;
-    }
-  
-    .question {
-      width: 100%;
-      height: 650px;
-      margin: 0;
-      padding: 0px 0px 0px 0px;
-      margin-left: 50px;
-      margin-top: 50px;
-    }
-  
-    .question p {
-      width: 600px;
-    }
-  
-    .tabLinks1 {
-      width: 600px;
-    }
-  
-    .button-wrap1 p {
-      text-align: left;
-    }
-  
-    .button-wrap1 {
-      width: 600px;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .but {
-      margin-left: -70px;
-      margin-bottom: 50px;
-    }
-  }
-  
-  @media screen and (max-width:800px) {
-    .tabDiv::before {
-      content: '';
-      position: absolute;
-      top: 450px;
-      left: 0;
-      width: 400px;
-      height: 250px;
-      border-top-right-radius: 600px;
-      border-bottom-right-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .tabDiv {
-      width: 100%;
-      height: auto;
-      transform: translateX(10%);
-      margin-top: 50px;
-    }
-  
-    .tabs {
-      margin-left: -40px;
-    }
-  
-    .tabContent-img img {
-      width: 400px;
-      height: auto;
-      margin-bottom: 80px;
-    }
-  
-    .tab {
-      /* display: grid;
-          grid-template-columns: 1fr;
-          grid-auto-rows: auto; */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-  
-    .tabContent-wrap {
-      width: 100%;
-      flex-direction: column;
-      height: auto;
-      align-items: center;
-    }
-  
-    .but .blue.btn {
-      margin: 0;
-      margin-left: -100px;
-    }
-  
-    .tab button {
-      background: transparent;
-      cursor: pointer;
-      outline: none;
-      transition: all .5s ease;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border: none;
-      margin: 0;
-    }
-  
-    .tab-links {
-      background: transparent;
-    }
-  
-    .tabContent-des {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .tabContent-des p {
-      text-align: center;
-    }
-  
-    .but {
-      margin-left: 0px;
-      margin-bottom: 80px;
-      text-align: center;
-    }
-  
-    .download {
-      margin-top: 50px;
-      height: 1200px;
-      z-index: 999;
-    }
-  
-    .cards {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: 40px;
-    }
-  
-    .card {
-      margin-bottom: 40px;
-      background: #fff;
-    }
-  
-    .card:first-child {
-      align-self: center;
-    }
-  
-    .card:nth-child(2) {
-      align-self: center;
-      margin-left: -40px;
-    }
-  
-    .card:last-child {
-      align-self: center;
-      margin-left: -40px;
-    }
-  
-    .tabDiv {
-      margin-left: -100px;
-    }
-  
-    .simpBookmark {
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width:700px) {
-    nav ul li a {
-      font-size: 12px;
-      font-weight: 500;
-    }
-  
-    nav ul li a.red.btn {
-      font-size: 12px;
-      font-weight: 500;
-    }
-  
-    .simpleBookmark {
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .simpImg {
-      margin: 0;
-      width: 90%;
-      height: auto;
-    }
-  
-    .simpBookmarkText {
-      width: 90%;
-      margin-right: 40px;
-    }
-  
-    .tabDiv::before {
-      content: '';
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 400px;
-      height: 250px;
-      border-top-right-radius: 600px;
-      border-bottom-right-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .tabDiv {
-      margin-top: -20px;
-      width: 90%;
-    }
-  
-    .tabPrgrph p {
-      width: 450px;
-    }
-  
-    .tabPrgrph {
-      margin-left: 170px;
-    }
-  
-    .tabDiv::before {
-      content: '';
-      position: absolute;
-      top: 500px;
-      left: 0;
-      width: 300px;
-      height: 250px;
-      border-top-right-radius: 600px;
-      border-bottom-right-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .tabs {
-      margin-left: 135px;
-    }
-  
-    .tabContent {
-      margin-top: 40px;
-      margin-left: -50px;
-    }
-  
-    .tabContent-img img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .downloadText p {
-      width: 450px;
-      margin: 0;
-    }
-  
-    .download {
-      margin-left: 20px;
-      margin-top: 40px;
-    }
-  
-    .questionText p {
-      width: 450px;
-      margin: 0;
-      margin-bottom: 40px;
-    }
-  
-    .question {
-      width: 90%;
-    }
-  
-    .cards {
-      margin-top: 40px;
-    }
-  
-    .tabContent1 p {
-      width: 450px;
-    }
-  
-    .divForms {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .divForms .red.btn {
-      width: 230px;
-      padding: 7px 12px;
-      margin-left: -7px;
-      margin-top: 10px;
-    }
-  
-    footer {
-      flex-direction: column;
-    }
-  
-    .tab button {
-      border-bottom: 1px solid var(--grayishBlue);
-    }
-  
-    .but .blue.btn {
-      margin-left: 10px;
-    }
-  
-    .footerTop {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .bookmark {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .bookmark ul.flex {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-  
-    .bookmark ul.flex li {
-      margin-bottom: 20px;
-    }
-  
-    .bookmark .logo {
-      margin-bottom: 20px;
-    }
-  
-    .footerTop .social.flex {
-      margin-left: 20px;
-    }
-  }
-  
-  @media screen and (max-width:540px) {
-    .hamburger {
-      display: block;
-      z-index: 999;
-      position: absolute;
-      top: 40px;
-      right: 40px;
-    }
-  
-    .hamburger.show {
-      display: block;
-    }
-  
-    .hamburgerImg.show {
-      width: 18px;
-      height: 15px;
-      background: url('../images/icon-hamburger.svg') no-repeat center center/cover;
-    }
-  
-    nav .logo {
-      z-index: 999;
-      position: absolute;
-      top: 40px;
-      left: 40px;
-    }
-  
-    .menuDiv {
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 100px;
-      left: 40px;
-    }
-  
-    .menu::before {
-      content: '';
-      position: absolute;
-      top: -100px;
-      left: -40px;
-      width: 100vw;
-      height: 100vh;
-      background-color: var(--veryDarkBlue);
-      opacity: 0.9;
-      margin-top: 0;
-      margin-left: 0;
-    }
-  
-    nav {
-      margin: 0;
-      padding: 0;
-    }
-  
-    .menu.flex {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-      margin-left: -60px;
-    }
-  
-    .menu.flex li {
-      width: 100vw;
-      height: 12vh;
-      text-align: center;
-      z-index: 999;
-    }
-  
-    .menu.flex li:first-child::before {
-      content: '';
-      position: absolute;
-      top: -10px;
-      left: 30px;
-      width: 350px;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .menu.flex li:nth-child(2)::before {
-      content: '';
-      position: absolute;
-      top: 60px;
-      left: 30px;
-      width: 350px;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .menu.flex li:nth-child(3)::before {
-      content: '';
-      position: absolute;
-      top: 150px;
-      left: 30px;
-      width: 350px;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .menu.flex li:nth-child(4)::before {
-      content: '';
-      position: absolute;
-      top: 220px;
-      left: 30px;
-      width: 350px;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .simpImg {
-      margin-top: 50px;
-    }
-  
-    .logo.change {
-      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(244deg) brightness(105%) contrast(101%);
-    }
-  
-    .menu.flex li a {
-      font-size: 18px;
-      font-weight: 500;
-      color: #fff;
-    }
-  
-    .menu.flex li .red.btn {
-      font-size: 18px;
-      font-weight: 500;
-      background-color: transparent;
-      margin-left: 40px;
-      margin-right: 40px;
-      width: 80%;
-      border: 2px solid #fff;
-    }
-  
-    .tabContent-des {
-      margin-top: 40px;
-    }
-  
-    .download {
-      margin-left: 0px;
-    }
-  
-    .downloadText p {
-      width: 350px;
-      text-align: center;
-    }
-  
-    .question {
-      margin: 0;
-      padding: 0;
-      margin-top: 40px;
-    }
-  
-    .questionText p {
-      margin: 0;
-      margin-left: 30px;
-      width: 340px;
-    }
-  
-    .questionText h2 {
-      margin: 0;
-      margin-left: 50px;
-      margin-bottom: 30px;
-    }
-  
-    .tabContent-des1 p {
-      width: 340px;
-      margin-left: 30px;
-    }
-  
-    .tabLinks1 {
-      margin-left: 30px;
-    }
-  
-    .headings h2 {
-      font-size: 22px;
-      width: 340px;
-      text-align: center;
-    }
-  
-    .simpleBookmark::after {
-      content: '';
-      position: absolute;
-      top: 170px;
-      right: 0;
-      width: 300px;
-      height: 200px;
-      border-top-left-radius: 600px;
-      border-bottom-left-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .menuDiv 
-    {
-      display: none;
-    }
-  
-    .menuDiv.show 
-    {
-      display: flex;
-    }
-  }
-
-  @media screen and (max-width:375px) {
-    .menuDiv.show {
-      display: flex;
-    }
-  
-    .logo {
-      display: block;
-    }
-  
-    .simpleBookmark::after {
-      content: '';
-      position: absolute;
-      top: 170px;
-      right: 0;
-      width: 200px;
-      height: 120px;
-      border-top-left-radius: 600px;
-      border-bottom-left-radius: 600px;
-      background-color: var(--softBlue);
-      z-index: -1;
-    }
-  
-    .simpleBookmark {
-      margin-top: 50px;
-    }
-  
-    .menu li {
-      width: 80vw;
-    }
-  
-    .menu {
-      margin-left: -50px;
-    }
-  
-    .menu.flex li:first-child::before {
-      content: '';
-      position: absolute;
-      top: -10px;
-      left: 0px;
-      width: 80vw;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .menu.flex li:nth-child(2)::before {
-      content: '';
-      position: absolute;
-      top: 60px;
-      left: 0px;
-      width: 80vw;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .menu.flex li:nth-child(3)::before {
-      content: '';
-      position: absolute;
-      top: 150px;
-      left: 0px;
-      width: 80vw;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .menu.flex li:nth-child(4)::before {
-      content: '';
-      position: absolute;
-      top: 220px;
-      left: 0px;
-      width: 80vw;
-      height: 1px;
-      background-color: var(--grayishBlue);
-      color: var(--grayishBlue);
-    }
-  
-    .simpleBookmarkText h1 {
-      font-size: 26px;
-      text-align: center;
-    }
-  
-    .simpleBookmarkText {
-      align-items: center;
-      text-align: center;
-    }
-  
-    .simpleBookmark {
-      align-items: center;
-      text-align: center;
-    }
-  
-    .simpleBookmarkText .btn {
-      font-size: 8px;
-    }
-  
-    .tabPrgrph p {
-      width: 260px;
-    }
-  
-    .tabContent-img img {
-      width: 100%;
-      height: auto;
-      margin-left: 60px;
-      margin-bottom: 60px;
-    }
-  
-    .tabContent-des p {
-      width: 260px;
-    }
-  
-    .tabContent-des h4 
-    {
-      text-align: center;
-    }
-  
-    .card 
-    {
-      width: 260px;
-    }
-  
-    .question p 
-    {
-      font-size: 15px;
-    }
-  
-    .questionText p
-    {
-      width: 260px;
-      margin: 0;
-      margin-left: 20px;
-    }
-  
-    .tabLinks1{
-      margin: 0;
-    }
-  
-    .tabContent-des1 p 
-    {
-      margin: 0;
-      width: 300px;
-    }
-  }
-  
