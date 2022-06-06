@@ -1,206 +1,247 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-:root {
+:root 
+{
+  --white: hsl(0, 0%, 100%);
   --softBlue: hsl(231, 69%, 60%);
   --softRed: hsl(0, 94%, 66%);
   --grayishBlue: hsl(229, 8%, 60%);
   --veryDarkBlue: hsl(229, 31%, 21%);
 }
 
-body {
+body 
+{
   font-family: 'Rubik', sans-serif;
-  font-size: 18px;
   overflow-x: hidden;
 }
 
-* {
+* 
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 
+{
   margin: 0;
 }
 
-ul, li {
+ul, li 
+{
   list-style: none;
 }
 
-a {
+a 
+{
   text-decoration: none;
 }
 
-.flex {
+.flex 
+{
   display: flex;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
+.container 
+{
   display: flex;
   flex-direction: column;
 }
 
-footer {
+main 
+{
   display: flex;
   flex-direction: column;
 }
 
-.simpBookmarkText {
+footer 
+{
+  display: flex;
   flex-direction: column;
 }
 
-.tabDiv {
+.simpBookmarkText 
+{
   flex-direction: column;
-  align-items: center;
 }
 
-.btn {
+.tabDiv 
+{
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.btn 
+{
   display: inline-block;
   object-fit: cover;
-  padding: 7px 15px;
+  padding: 11px 30px;
   border-radius: 5px;
   border: none;
   outline: none;
 }
 
-.blue.btn:hover {
+.blue.btn:hover 
+{
   background-color: white;
   color: var(--softBlue);
   border: 2px solid var(--softBlue);
 }
 
-.red.btn:hover {
+.red.btn:hover 
+{
   background-color: white;
   color: var(--softRed);
   border: 2px solid var(--softRed);
 }
 
-.blue {
+.blue 
+{
   background-color: var(--softBlue);
   color: white;
   font-weight: 500;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.red {
+.red 
+{
   background-color: var(--softRed);
   color: white;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   font-size: 18px;
 }
 
-.tabPrgrph {
+.tabPrgrph 
+{
   flex-direction: column;
 }
 
-.download {
+.download 
+{
   flex-direction: column;
 }
 
-.downloadText {
+.downloadText 
+{
   flex-direction: column;
 }
 
-.card {
+.card 
+{
   flex-direction: column;
 }
 
-.contact {
+.contact 
+{
   flex-direction: column;
 }
 
-.headings {
+.headings 
+{
   flex-direction: column;
 }
 
-.inputValid {
+.inputValid 
+{
   flex-direction: column;
 }
 
-nav ul.flex li a {
+nav ul.flex li a 
+{
   text-transform: uppercase;
   color: var(--veryDarkBlue);
+  font-size: 14px;
 }
 
-nav ul.flex li a:hover {
+nav ul.flex li a:hover 
+{
   color: var(--softRed);
   cursor: pointer;
 }
 
-.red.btn {
+.red.btn 
+{
   color: #fff;
 }
 
-.red.btn:hover {
+.red.btn:hover 
+{
   color: var(--softRed);
   background-color: white;
   border: 2px solid var(--softRed);
 }
 
-h1 {
+h1 
+{
   font-size: 3em;
   color: var(--veryDarkBlue);
 }
 
-h3, h4 {
+h3, h4 
+{
   color: var(--veryDarkBlue);
 }
 
-p {
+p 
+{
   color: var(--grayishBlue);
   line-height: 1.5em;
 }
 
-.buts {
+.buts 
+{
   display: flex;
   font-size: 20px;
   font-weight: 500;
 }
 
-.center {
+.center 
+{
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.question {
+.question 
+{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.questionText {
+.questionText 
+{
   flex-direction: column;
   width: 50%;
   text-align: center;
 }
 
-.questionAccordion {
+.questionAccordion 
+{
   width: 50%;
 }
 
-.questionText h2 {
+.questionText h2 
+{
   color: var(--veryDarkBlue);
   margin-bottom: 20px;
 }
 
-.but {
+.but 
+{
   margin-top: 20px;
 }
 
-.bookmark.flex {
+.bookmark.flex 
+{
   align-items: center;
 }
 
-.tab1 {
+.tab1 
+{
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
@@ -208,14 +249,16 @@ p {
   margin-top: 20px;
 }
 
-.tabContent-wrap1 {
+.tabContent-wrap1 
+{
   width: 100%;
   flex-direction: column;
   height: auto;
   align-items: center;
 }
 
-.tab1 button {
+.tab1 button 
+{
   background: transparent;
   cursor: pointer;
   outline: none;
@@ -225,20 +268,24 @@ p {
   border: none;
 }
 
-.tab-links1 {
+.tab-links1 
+{
   background: transparent;
 }
 
-.accordionIcon {
+.accordionIcon 
+{
   margin-top: 10px;
   text-align: right;
 }
 
-button.tab-links1:first-child {
+button.tab-links1:first-child 
+{
   border-top: 1px solid #999;
 }
 
-.button-wrap1 p {
+.button-wrap1 p 
+{
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -248,118 +295,144 @@ button.tab-links1:first-child {
   border: none;
 }
 
-.button-wrap1:hover p {
+.button-wrap1:hover p 
+{
   color: var(--softRed);
 }
 
-.button-wrap1 .accordionIcon {
+.button-wrap1 .accordionIcon 
+{
   width: auto;
   height: 7px;
   object-fit: cover;
 }
 
-.button-wrap1 {
+.button-wrap1 
+{
   display: flex;
   justify-content: space-between;
 }
 
-.tab1 button:hover h4 {
+.tab1 button:hover h4 
+{
   opacity: 1;
 }
 
 /* Tab Content */
-.tabContent1 {
+.tabContent1 
+{
   display: none;
   height: auto;
 }
 
-.showContent1 {
+.showContent1 
+{
   display: block;
 }
 
-.tabContent-des1 {
+.tabContent-des1 
+{
   height: auto;
 }
 
-.tabContent-wrap1 {
+.tabContent-wrap1 
+{
   height: auto;
 }
 
-.tabContent-des1 h4 {
+.tabContent-des1 h4 
+{
   color: var(--veryDarkBlue);
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
 
-.tabContent-des1 p {
+.tabContent-des1 p 
+{
   width: 100%;
   height: auto;
   color: var(--grayishBlue);
   margin-bottom: 20px;
 }
 
-.contact {
+.contact 
+{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.contact h3, h5 {
+.contact h3, h5 
+{
   color: white;
   text-align: center;
   font-weight: none;
 }
 
-.contact h2 {
+.contact h2 
+{
   margin-bottom: 20px;
 }
 
-.contact h5 {
+.contact h5 
+{
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.emailAlert.show {
+.emailAlert.show 
+{
   display: block;
 }
 
 @media screen and (max-width:1440px) {
-  .question {
+  .question 
+  {
     padding: 60px 165px;
   }
 
-  nav {
-    padding: 60px 165px;
+  nav 
+  {
+    padding: 30px 168px;
     justify-content: space-between;
     align-items: center;
   }
 
-  nav ul.flex {
+  nav ul.flex 
+  {
     justify-content: space-between;
     align-items: center;
   }
 
-  nav ul li {
+  nav ul li 
+  {
     margin-left: 20px;
+    margin-right: 20px;
   }
 
-  .hamburger {
+  .hamburger 
+  {
     display: none;
   }
 
-  .simpleBookmark {
-    padding: 60px 0px 60px 165px;
+  .simpleBookmark 
+  {
+    height: 535px;
+    padding: 60px 0px 0px 165px;
+    margin-bottom: 60px;
   }
 
-  .simpleBookmark .blue.btn {
-    padding: 7px 15px;
-    font-weight: 500;
+  .simpleBookmark .blue .btn 
+  {
+    padding: 14px 17px;
+    font-weight: 400;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .simpleBookmark .lightGrey.btn {
+  .simpleBookmark .lightGrey .btn 
+  {
     padding: 7px 15px;
     font-weight: 500;
     text-align: center;
@@ -367,106 +440,124 @@ button.tab-links1:first-child {
     background: #e5e5e5;
   }
 
-  .simpleBookmark .lightGrey.btn:hover {
+  .simpleBookmark .lightGrey .btn:hover 
+  {
     border: 2px solid var(--grayishBlue);
   }
 
-  .simpleBookmark::after {
+  .simpleBookmark::after 
+  {
     content: '';
     position: absolute;
     top: 340px;
     right: 0;
     width: 400px;
-    height: 350px;
+    height: 287px;
     border-top-left-radius: 600px;
     border-bottom-left-radius: 600px;
     background-color: var(--softBlue);
     z-index: -1;
   }
 
-  .simpBookmarkText {
+  .simpBookmarkText 
+  {
     margin-top: 50px;
   }
 
-  .simpBookmarkText .buts .blue.btn {
+  .simpBookmarkText .buts .blue.btn 
+  {
     margin-right: 15px;
   }
 
-  .simpBookmarkText button.btn {
+  .simpBookmarkText button.btn 
+  {
     font-size: 15px;
     font-weight: 500;
-    width: 100%;
+    /* width: 100%; */
   }
 
-  .simpBookmarkText h1 {
+  .simpBookmarkText h1 
+  {
     margin-bottom: 20px;
   }
 
-  .simpBookmarkText p {
+  .simpBookmarkText p 
+  {
+    width: 79%;
     margin-bottom: 20px;
     line-height: 1.7em;
     color: var(--grayishBlue);
   }
 
-  .simpBookmarkText .btn {
-    width: 160px;
+  .simpBookmarkText .btn 
+  {
+    width: 170px;
   }
 
-  .simpBookmarkText .btn:hover {
+  .simpBookmarkText .btn:hover 
+  {
     border: 1px solid var(--grayishBlue);
     color: var(--grayishBlue);
     background: white;
     cursor: pointer;
   }
 
-  .simpBookmarkText .btn.blue:hover {
+  .simpBookmarkText .btn.blue:hover 
+  {
     border: 2px solid var(--softBlue);
     color: var(--softBlue);
     background: white;
     cursor: pointer;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     width: 1440px;
-    height: 800px;
-    ;
+    height: 680px;
     max-width: 1440px;
-    padding: 60px 165px 60px 0px;
+    /* padding: 60px 165px 60px 0px; */
   }
 
-  .tabDiv::before {
+  .tabDiv::before 
+  {
     content: '';
     position: absolute;
-    top: 1200px;
+    top: 1064px;
     left: 0;
-    width: 400px;
-    height: 350px;
+    width: 475px;
+    height: 300px;
     border-top-right-radius: 600px;
     border-bottom-right-radius: 600px;
     background-color: var(--softBlue);
     z-index: -1;
   }
 
-  .tabPrgrph {
+  .tabPrgrph 
+  {
     flex-direction: column;
     align-items: center;
   }
 
-  .tabPrgrph h3 {
+  .tabPrgrph h3 
+  {
     margin-bottom: 20px;
+    font-size: 1.5em;
   }
 
-  .tabPrgrph p {
+  .tabPrgrph p 
+  {
     margin-bottom: 40px;
     width: 40%;
     text-align: center;
   }
 
-  .download {
+  .download 
+  {
     padding: 60px 165px;
   }
 
-  .download img.social {
+  .download img.social 
+  {
     display: block;
     width: auto;
     height: 100px;
@@ -474,18 +565,21 @@ button.tab-links1:first-child {
     margin-bottom: 30px;
   }
 
-  .download img.dot {
+  .download img.dot 
+  {
     height: 4px;
     width: 100%;
     object-fit: cover;
   }
 
-  .cards {
+  .cards 
+  {
     justify-content: center;
     height: 400px;
   }
 
-  .card {
+  .card 
+  {
     padding-top: 25px;
     padding-bottom: 25px;
     align-items: center;
@@ -494,59 +588,73 @@ button.tab-links1:first-child {
     box-shadow: 0px 8px 20px -1px rgba(119, 119, 119, 1);
   }
 
-  .card p {
+  .card p 
+  {
     margin-bottom: 30px;
   }
 
-  .card .btn {
+  .card .btn 
+  {
     margin-top: 20px;
   }
 
-  .card:first-child {
+  .card:first-child 
+  {
     margin-right: 40px;
     align-self: flex-start;
   }
 
-  .card:nth-child(2) {
+  .card:nth-child(2) 
+  {
     align-self: center;
   }
 
-  .card:last-child {
+  .card:last-child 
+  {
     align-self: flex-end;
     margin-left: 40px;
   }
 
-  .downloadText {
+  .downloadText 
+  {
     flex-direction: column;
     align-items: center;
   }
 
-  .downloadText h3 {
+  .downloadText h3 
+  {
     margin-bottom: 30px;
+    font-size: 20px;
   }
 
-  .downloadText p {
+  .downloadText p 
+  {
     margin-bottom: 40px;
-    width: 40%;
+    width: 42%;
     text-align: center;
+    font-size: 15px;
   }
 
-  .card .btn:hover {
+  .card .btn:hover 
+  {
     background-color: white;
     color: var(--softBlue);
     border: 2px solid var(--softBlue);
   }
 
   /* Tab Button */
-  .tab {
+  .tab 
+  {
     display: flex;
     justify-content: center;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     margin-left: 40px;
+    margin-bottom: 60px;
   }
 
-  .tab button {
+  .tab button 
+  {
     width: 200px;
     height: 50px;
     background: #fff;
@@ -554,17 +662,18 @@ button.tab-links1:first-child {
     cursor: pointer;
     outline: none;
     transition: all .5s ease;
-    margin-bottom: 100px;
     margin-right: 40px;
     border-bottom: 0.5px solid var(--grayishBlue);
   }
 
-  .tab button:hover {
+  .tab button:hover 
+  {
     background: #fff;
     border-bottom: 5px solid var(--softRed);
   }
 
-  .tab button h4 {
+  .tab button h4 
+  {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-style: none;
@@ -572,65 +681,76 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .tab button:hover h4 {
+  .tab button:hover h4 
+  {
     opacity: 1;
   }
 
   /* Tab Content */
-  .tabContent {
+  .tabContent 
+  {
     display: none;
   }
 
-  .showContent {
+  .showContent 
+  {
     display: block;
   }
 
-  .tabContent-wrap {
+  .tabContent-wrap 
+  {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 100px;
   }
 
-  .tabContent-des h4 {
+  .tabContent-des h4 
+  {
     color: var(--veryDarkBlue);
     font-size: 1.6rem;
     margin-bottom: 20px;
   }
 
-  .tabContent-des p {
+  .tabContent-des p 
+  {
     width: 400px;
     color: var(--grayishBlue);
     margin: 0;
     margin-bottom: 20px;
   }
 
-  .tabContent-img {
+  .tabContent-img 
+  {
     width: 100%;
     height: auto;
     margin: 0;
   }
 
-  .tabContent-des {
+  .tabContent-des 
+  {
     width: 100%;
     margin-left: 0;
     padding-left: 0;
   }
 
-  .tabContent-img img {
-    width: 536px;
+  .tabContent-img img 
+  {
+    width: 470px;
     height: auto;
     margin-right: 120px;
   }
 
-  .contact {
+  .contact 
+  {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: var(--softBlue);
     color: white;
   }
 
-  .emailCorrection {
+  .emailCorrection 
+  {
     border: none;
     outline: none;
     padding: 8px;
@@ -640,7 +760,8 @@ button.tab-links1:first-child {
     width: 230px;
   }
 
-  .inputValid {
+  .inputValid 
+  {
     background-color: transparent;
     border-radius: 5px;
     padding: 3px;
@@ -649,7 +770,8 @@ button.tab-links1:first-child {
     margin-right: 10px;
   }
 
-  .inputValid p {
+  .inputValid p 
+  {
     color: white;
     font-size: 12px;
     font-weight: 500;
@@ -657,173 +779,213 @@ button.tab-links1:first-child {
     display: none;
   }
 
-  footer {
+  footer 
+  {
     background-color: var(--veryDarkBlue);
     padding: 35px 165px 10px 165px;
     justify-content: center;
     align-items: space-between;
   }
 
-  .footerTop {
+  .footerTop 
+  {
     justify-content: space-between;
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
 
-  .footerTop ul.flex {
+  .footerTop ul.flex 
+  {
     margin-left: 50px;
   }
 
-  .footerTop ul.flex li a {
+  .footerTop ul.flex li a 
+  {
     text-transform: uppercase;
     margin-right: 20px;
     color: #fff;
   }
 
-  .footerTop ul.flex li a:hover {
+  .footerTop ul.flex li a:hover 
+  {
     color: tomato;
   }
 
-  footer .social img:first-child {
+  footer .social img:first-child 
+  {
     margin-right: 20px;
   }
 
-  .filterIcon:hover {
+  .filterIcon:hover 
+  {
     filter: invert(42%) sepia(34%) saturate(1085%) hue-rotate(314deg) brightness(107%) contrast(105%);
   }
 
-  .footerBottom {
+  .footerBottom 
+  {
     display: flex;
     align-items: flex-end;
     margin-top: 20px;
     justify-content: center;
   }
+
+  .simpleBookmarkImg img 
+  {
+    width: 590px;
+  }
 }
 
 @media screen and (max-width:1300px) {
-  nav {
+  nav 
+  {
     padding-right: 100px;
     padding-left: 100px;
   }
 
-  .simpleBookmark {
+  .simpleBookmark 
+  {
     padding: 60px 0px 60px 100px;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     padding: 60px 100px 60px -65px;
   }
 
-  footer {
+  footer 
+  {
     padding-left: 100px;
     padding-right: 100px;
   }
 
-  .question {
+  .question 
+  {
     padding: 60px 100px;
   }
 }
 
 @media screen and (max-width:1300px) {
-  .tabDiv {
+  .tabDiv 
+  {
     padding: 60px 50px 60px -135px;
   }
 
-  .question {
+  .question 
+  {
     padding: 60px 50px;
   }
 }
 
 @media screen and (max-width:1200px) {
-  .tabDiv {
+  .tabDiv 
+  {
     padding: 60px 50px 60px -175px;
   }
 }
 
 @media screen and (max-width:1100px) {
-  .tabDiv {
+  .tabDiv
+   {
     padding: 60px 50px 60px -175px;
   }
 
-  .tabContent-img {
+  .tabContent-img 
+  {
     margin-left: -100px;
   }
 
-  .tabs {
+  .tabs 
+  {
     margin-left: -150px;
   }
 
-  .tabContent-img img {
+  .tabContent-img img 
+  {
     width: 400px;
     height: auto;
   }
 
-  .tabContent-des {
+  .tabContent-des 
+  {
     margin-left: -20px;
   }
 
-  .simpleBookmark .blue.btn {
+  .simpleBookmark .blue.btn 
+  {
     font-size: 14px;
   }
 
-  .download .blue.btn {
+  .download .blue.btn 
+  {
     font-size: 14px;
     font-weight: 500;
   }
 
-  .simpleBookmark .lightGrey.btn {
+  .simpleBookmark .lightGrey.btn 
+  {
     font-size: 14px;
   }
 
-  .tabPrgrph {
+  .tabPrgrph 
+  {
     margin-left: -150px;
   }
 
-  .card.social {
+  .card.social 
+  {
     width: 40px;
     height: auto;
   }
 }
 
 @media screen and (max-width:1000px) {
-  nav {
+  nav 
+  {
     padding-right: 50px;
     padding-left: 50px;
   }
 
-  .simpleBookmark {
+  .simpleBookmark 
+  {
     padding: 60px 0px 60px 50px;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     padding: 60px 50px 60px -65px;
   }
 
-  footer {
+  footer 
+  {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  .simpImg {
+  .simpImg 
+  {
     width: 500px;
     height: auto;
     margin-top: 20px;
   }
 
-  .simpBookmarkText h1 {
+  .simpBookmarkText h1 
+  {
     font-size: 2em;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     margin-left: -60px;
   }
 
-  .tabContent-img img {
+  .tabContent-img img 
+  {
     width: 400px;
     height: auto;
   }
 
-  .simpleBookmark::after {
+  .simpleBookmark::after 
+  {
     content: '';
     position: absolute;
     top: 400px;
@@ -836,7 +998,8 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .tabDiv::before {
+  .tabDiv::before 
+  {
     content: '';
     position: absolute;
     top: 1200px;
@@ -849,7 +1012,8 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .download {
+  .download
+  {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -857,85 +1021,101 @@ button.tab-links1:first-child {
     padding-right: 50px;
   }
 
-  .question {
+  .question 
+  {
     width: 100%;
   }
 
-  .questionText {
+  .questionText 
+  {
     width: 80%;
   }
 
-  .questionAccordion {
+  .questionAccordion 
+  {
     width: 80%;
   }
 
-  .button-wrap1 {
+  .button-wrap1 
+  {
     width: 600px;
     display: flex;
     justify-content: space-between;
   }
 
-  button.tabLinks1 {
+  button.tabLinks1 
+  {
     width: 600px;
   }
 
-  .button-wrap1 {
+  .button-wrap1 
+  {
     width: 600px;
   }
 
-  .button-wrap1 p {
+  .button-wrap1 p 
+  {
     width: 600px;
   }
 }
 
 @media screen and (max-width:900px) {
-  .simpImg {
+  .simpImg 
+  {
     width: 360px;
     height: auto;
     margin-top: 80px;
     margin-left: 40px;
   }
 
-  .simpBookmarkText {
+  .simpBookmarkText 
+  {
     width: 350px;
     height: auto;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     width: 100%;
     align-items: center;
     margin: 0;
     padding: 0;
   }
 
-  .tabs {
+  .tabs 
+  {
     margin: 0;
     padding: 0;
   }
 
-  .tabContent {
+  .tabContent 
+  {
     margin: 0;
     padding: 0;
   }
 
-  .tabPrgrph {
+  .tabPrgrph 
+  {
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
-  .tabPrgrph p {
+  .tabPrgrph p 
+  {
     width: 600px;
   }
 
-  .tabContent-img img {
+  .tabContent-img img 
+  {
     width: 350px;
     height: auto;
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  .tabDiv::before {
+  .tabDiv::before 
+  {
     content: '';
     position: absolute;
     top: 1100px;
@@ -948,15 +1128,18 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .downloadText {
+  .downloadText 
+  {
     width: 100%;
   }
 
-  .downloadText p {
+  .downloadText p 
+  {
     width: 600px;
   }
 
-  .question {
+  .question 
+  {
     width: 100%;
     height: 650px;
     margin: 0;
@@ -965,32 +1148,38 @@ button.tab-links1:first-child {
     margin-top: 50px;
   }
 
-  .question p {
+  .question p 
+  {
     width: 600px;
   }
 
-  .tabLinks1 {
+  .tabLinks1 
+  {
     width: 600px;
   }
 
-  .button-wrap1 p {
+  .button-wrap1 p 
+  {
     text-align: left;
   }
 
-  .button-wrap1 {
+  .button-wrap1 
+  {
     width: 600px;
     display: flex;
     justify-content: space-between;
   }
 
-  .but {
+  .but 
+  {
     margin-left: -70px;
     margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width:800px) {
-  .tabDiv::before {
+  .tabDiv::before 
+  {
     content: '';
     position: absolute;
     top: 450px;
@@ -1003,24 +1192,28 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     width: 100%;
     height: auto;
     transform: translateX(10%);
     margin-top: 50px;
   }
 
-  .tabs {
+  .tabs 
+  {
     margin-left: -40px;
   }
 
-  .tabContent-img img {
+  .tabContent-img img 
+  {
     width: 400px;
     height: auto;
     margin-bottom: 80px;
   }
 
-  .tab {
+  .tab 
+  {
     /* display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: auto; */
@@ -1031,19 +1224,22 @@ button.tab-links1:first-child {
     margin-top: 20px;
   }
 
-  .tabContent-wrap {
+  .tabContent-wrap 
+  {
     width: 100%;
     flex-direction: column;
     height: auto;
     align-items: center;
   }
 
-  .but .blue.btn {
+  .but .blue.btn 
+  {
     margin: 0;
     margin-left: -100px;
   }
 
-  .tab button {
+  .tab button 
+  {
     background: transparent;
     cursor: pointer;
     outline: none;
@@ -1054,97 +1250,115 @@ button.tab-links1:first-child {
     margin: 0;
   }
 
-  .tab-links {
+  .tab-links 
+  {
     background: transparent;
   }
 
-  .tabContent-des {
+  .tabContent-des 
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .tabContent-des p {
+  .tabContent-des p 
+  {
     text-align: center;
   }
 
-  .but {
+  .but 
+  {
     margin-left: 0px;
     margin-bottom: 80px;
     text-align: center;
   }
 
-  .download {
+  .download 
+  {
     margin-top: 50px;
     height: 1200px;
     z-index: 999;
   }
 
-  .cards {
+  .cards 
+  {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-left: 40px;
   }
 
-  .card {
+  .card 
+  {
     margin-bottom: 40px;
     background: #fff;
   }
 
-  .card:first-child {
+  .card:first-child 
+  {
     align-self: center;
   }
 
-  .card:nth-child(2) {
-    align-self: center;
-    margin-left: -40px;
-  }
-
-  .card:last-child {
+  .card:nth-child(2) 
+  {
     align-self: center;
     margin-left: -40px;
   }
 
-  .tabDiv {
+  .card:last-child 
+  {
+    align-self: center;
+    margin-left: -40px;
+  }
+
+  .tabDiv 
+  {
     margin-left: -100px;
   }
 
-  .simpBookmark {
+  .simpBookmark 
+  {
     flex-wrap: wrap;
     flex-direction: column;
   }
 }
 
 @media screen and (max-width:700px) {
-  nav ul li a {
+  nav ul li a 
+  {
     font-size: 12px;
     font-weight: 500;
   }
 
-  nav ul li a.red.btn {
+  nav ul li a.red.btn 
+  {
     font-size: 12px;
     font-weight: 500;
   }
 
-  .simpleBookmark {
+  .simpleBookmark 
+  {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
   }
 
-  .simpImg {
+  .simpImg 
+  {
     margin: 0;
     width: 90%;
     height: auto;
   }
 
-  .simpBookmarkText {
+  .simpBookmarkText 
+  {
     width: 90%;
     margin-right: 40px;
   }
 
-  .tabDiv::before {
+  .tabDiv::before 
+  {
     content: '';
     position: absolute;
     top: 50px;
@@ -1157,20 +1371,24 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .tabDiv {
+  .tabDiv 
+  {
     margin-top: -20px;
     width: 90%;
   }
 
-  .tabPrgrph p {
+  .tabPrgrph p 
+  {
     width: 450px;
   }
 
-  .tabPrgrph {
+  .tabPrgrph 
+  {
     margin-left: 170px;
   }
 
-  .tabDiv::before {
+  .tabDiv::before 
+  {
     content: '';
     position: absolute;
     top: 500px;
@@ -1183,104 +1401,125 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .tabs {
+  .tabs 
+  {
     margin-left: 135px;
   }
 
-  .tabContent {
+  .tabContent 
+  {
     margin-top: 40px;
     margin-left: -50px;
   }
 
-  .tabContent-img img {
+  .tabContent-img img 
+  {
     width: 100%;
     height: auto;
   }
 
-  .downloadText p {
+  .downloadText p 
+  {
     width: 450px;
     margin: 0;
   }
 
-  .download {
+  .download 
+  {
     margin-left: 20px;
     margin-top: 40px;
   }
 
-  .questionText p {
+  .questionText p 
+  {
     width: 450px;
     margin: 0;
     margin-bottom: 40px;
   }
 
-  .question {
+  .question 
+  {
     width: 90%;
   }
 
-  .cards {
+  .cards 
+  {
     margin-top: 40px;
   }
 
-  .tabContent1 p {
+  .tabContent1 p 
+  {
     width: 450px;
   }
 
-  .divForms {
+  .divForms 
+  {
     flex-direction: column;
     align-items: center;
   }
 
-  .divForms .red.btn {
+  .divForms .red.btn 
+  {
     width: 230px;
     padding: 7px 12px;
     margin-left: -7px;
     margin-top: 10px;
   }
 
-  footer {
+  footer 
+  {
     flex-direction: column;
   }
 
-  .tab button {
+  .tab button 
+  {
     border-bottom: 1px solid var(--grayishBlue);
   }
 
-  .but .blue.btn {
+  .but .blue.btn 
+  {
     margin-left: 10px;
   }
 
-  .footerTop {
+  .footerTop 
+  {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
 
-  .bookmark {
+  .bookmark 
+  {
     flex-direction: column;
     align-items: center;
   }
 
-  .bookmark ul.flex {
+  .bookmark ul.flex 
+  {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
   }
 
-  .bookmark ul.flex li {
+  .bookmark ul.flex li 
+  {
     margin-bottom: 20px;
   }
 
-  .bookmark .logo {
+  .bookmark .logo 
+  {
     margin-bottom: 20px;
   }
 
-  .footerTop .social.flex {
+  .footerTop .social.flex 
+  {
     margin-left: 20px;
   }
 }
 
 @media screen and (max-width:540px) {
-  .hamburger {
+  .hamburger 
+  {
     display: block;
     z-index: 999;
     position: absolute;
@@ -1288,24 +1527,28 @@ button.tab-links1:first-child {
     right: 40px;
   }
 
-  .hamburger.show {
+  .hamburger.show 
+  {
     display: block;
   }
 
-  .hamburgerImg.show {
+  .hamburgerImg.show 
+  {
     width: 18px;
     height: 15px;
     background: url('../images/icon-hamburger.svg') no-repeat center center/cover;
   }
 
-  nav .logo {
+  nav .logo 
+  {
     z-index: 999;
     position: absolute;
     top: 40px;
     left: 40px;
   }
 
-  .menuDiv {
+  .menuDiv 
+  {
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -1313,7 +1556,8 @@ button.tab-links1:first-child {
     left: 40px;
   }
 
-  .menu::before {
+  .menu::before 
+  {
     content: '';
     position: absolute;
     top: -100px;
@@ -1326,26 +1570,30 @@ button.tab-links1:first-child {
     margin-left: 0;
   }
 
-  nav {
+  nav 
+  {
     margin: 0;
     padding: 0;
   }
 
-  .menu.flex {
+  .menu.flex 
+  {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     margin-left: -60px;
   }
 
-  .menu.flex li {
+  .menu.flex li 
+  {
     width: 100vw;
     height: 12vh;
     text-align: center;
     z-index: 999;
   }
 
-  .menu.flex li:first-child::before {
+  .menu.flex li:first-child::before 
+  {
     content: '';
     position: absolute;
     top: -10px;
@@ -1356,7 +1604,8 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .menu.flex li:nth-child(2)::before {
+  .menu.flex li:nth-child(2)::before 
+  {
     content: '';
     position: absolute;
     top: 60px;
@@ -1367,7 +1616,8 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .menu.flex li:nth-child(3)::before {
+  .menu.flex li:nth-child(3)::before 
+  {
     content: '';
     position: absolute;
     top: 150px;
@@ -1378,7 +1628,8 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .menu.flex li:nth-child(4)::before {
+  .menu.flex li:nth-child(4)::before 
+  {
     content: '';
     position: absolute;
     top: 220px;
@@ -1389,21 +1640,25 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .simpImg {
+  .simpImg 
+  {
     margin-top: 50px;
   }
 
-  .logo.change {
+  .logo.change 
+  {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(244deg) brightness(105%) contrast(101%);
   }
 
-  .menu.flex li a {
+  .menu.flex li a 
+  {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
   }
 
-  .menu.flex li .red.btn {
+  .menu.flex li .red.btn 
+  {
     font-size: 18px;
     font-weight: 500;
     background-color: transparent;
@@ -1413,53 +1668,63 @@ button.tab-links1:first-child {
     border: 2px solid #fff;
   }
 
-  .tabContent-des {
+  .tabContent-des 
+  {
     margin-top: 40px;
   }
 
-  .download {
+  .download 
+  {
     margin-left: 0px;
   }
 
-  .downloadText p {
+  .downloadText p 
+  {
     width: 350px;
     text-align: center;
   }
 
-  .question {
+  .question 
+  {
     margin: 0;
     padding: 0;
     margin-top: 40px;
   }
 
-  .questionText p {
+  .questionText p 
+  {
     margin: 0;
     margin-left: 30px;
     width: 340px;
   }
 
-  .questionText h2 {
+  .questionText h2 
+  {
     margin: 0;
     margin-left: 50px;
     margin-bottom: 30px;
   }
 
-  .tabContent-des1 p {
+  .tabContent-des1 p 
+  {
     width: 340px;
     margin-left: 30px;
   }
 
-  .tabLinks1 {
+  .tabLinks1 
+  {
     margin-left: 30px;
   }
 
-  .headings h2 {
+  .headings h2 
+  {
     font-size: 22px;
     width: 340px;
     text-align: center;
   }
 
-  .simpleBookmark::after {
+  .simpleBookmark::after 
+  {
     content: '';
     position: absolute;
     top: 170px;
@@ -1472,25 +1737,30 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .menuDiv {
+  .menuDiv 
+  {
     display: none;
   }
 
-  .menuDiv.show {
+  .menuDiv.show 
+  {
     display: flex;
   }
 }
 
 @media screen and (max-width:375px) {
-  .menuDiv.show {
+  .menuDiv.show 
+  {
     display: flex;
   }
 
-  .logo {
+  .logo 
+  {
     display: block;
   }
 
-  .simpleBookmark::after {
+  .simpleBookmark::after 
+  {
     content: '';
     position: absolute;
     top: 170px;
@@ -1503,19 +1773,23 @@ button.tab-links1:first-child {
     z-index: -1;
   }
 
-  .simpleBookmark {
+  .simpleBookmark 
+  {
     margin-top: 50px;
   }
 
-  .menu li {
+  .menu li 
+  {
     width: 80vw;
   }
 
-  .menu {
+  .menu 
+  {
     margin-left: -50px;
   }
 
-  .menu.flex li:first-child::before {
+  .menu.flex li:first-child::before 
+  {
     content: '';
     position: absolute;
     top: -10px;
@@ -1526,7 +1800,8 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .menu.flex li:nth-child(2)::before {
+  .menu.flex li:nth-child(2)::before 
+  {
     content: '';
     position: absolute;
     top: 60px;
@@ -1537,7 +1812,8 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .menu.flex li:nth-child(3)::before {
+  .menu.flex li:nth-child(3)::before 
+  {
     content: '';
     position: absolute;
     top: 150px;
@@ -1548,7 +1824,8 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .menu.flex li:nth-child(4)::before {
+  .menu.flex li:nth-child(4)::before 
+  {
     content: '';
     position: absolute;
     top: 220px;
@@ -1559,63 +1836,76 @@ button.tab-links1:first-child {
     color: var(--grayishBlue);
   }
 
-  .simpleBookmarkText h1 {
+  .simpleBookmarkText h1 
+  {
     font-size: 26px;
     text-align: center;
   }
 
-  .simpleBookmarkText {
+  .simpleBookmarkText 
+  {
     align-items: center;
     text-align: center;
   }
 
-  .simpleBookmark {
+  .simpleBookmark 
+  {
     align-items: center;
     text-align: center;
   }
 
-  .simpleBookmarkText .btn {
+  .simpleBookmarkText .btn 
+  {
     font-size: 8px;
   }
 
-  .tabPrgrph p {
+  .tabPrgrph p 
+  {
     width: 260px;
   }
 
-  .tabContent-img img {
+  .tabContent-img img 
+  {
     width: 100%;
     height: auto;
     margin-left: 60px;
     margin-bottom: 60px;
   }
 
-  .tabContent-des p {
+  .tabContent-des p 
+  {
     width: 260px;
   }
 
-  .tabContent-des h4 {
+  .tabContent-des h4 
+  {
     text-align: center;
   }
 
-  .card {
+  .card 
+  {
     width: 260px;
   }
 
-  .question p {
+  .question p 
+  {
     font-size: 15px;
   }
 
-  .questionText p {
+  .questionText p 
+  {
     width: 260px;
     margin: 0;
     margin-left: 20px;
   }
 
-  .tabLinks1 {
+  .tabLinks1 
+  {
     margin: 0;
   }
 
-  .tabContent-des1 p {
+  .tabContent-des1 p 
+  {
     margin: 0;
     width: 300px;
   }
