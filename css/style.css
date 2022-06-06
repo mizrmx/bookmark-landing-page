@@ -83,14 +83,14 @@ footer
 
 .blue.btn:hover 
 {
-  background-color: white;
+  background-color: var(--white);
   color: var(--softBlue);
   border: 2px solid var(--softBlue);
 }
 
 .red.btn:hover 
 {
-  background-color: white;
+  background-color: var(--white);
   color: var(--softRed);
   border: 2px solid var(--softRed);
 }
@@ -98,7 +98,7 @@ footer
 .blue 
 {
   background-color: var(--softBlue);
-  color: white;
+  color: var(--white);
   font-weight: 500;
   text-align: center;
   font-size: 18px;
@@ -107,7 +107,7 @@ footer
 .red 
 {
   background-color: var(--softRed);
-  color: white;
+  color: var(--white);
   font-weight: 400;
   text-align: center;
   font-size: 18px;
@@ -163,13 +163,13 @@ nav ul.flex li a:hover
 
 .red.btn 
 {
-  color: #fff;
+  color: var(--white);
 }
 
 .red.btn:hover 
 {
   color: var(--softRed);
-  background-color: white;
+  background-color: var(--white);
   border: 2px solid var(--softRed);
 }
 
@@ -379,7 +379,7 @@ button.tab-links1:first-child
 
 .contact h3, h5 
 {
-  color: white;
+  color: var(--white);
   text-align: center;
   font-weight: none;
 }
@@ -510,7 +510,7 @@ button.tab-links1:first-child
   {
     border: 1px solid var(--grayishBlue);
     color: var(--grayishBlue);
-    background: white;
+    background: var(--white);
     cursor: pointer;
   }
 
@@ -518,7 +518,7 @@ button.tab-links1:first-child
   {
     border: 2px solid var(--softBlue);
     color: var(--softBlue);
-    background: white;
+    background: var(--white);
     cursor: pointer;
   }
 
@@ -647,7 +647,7 @@ button.tab-links1:first-child
 
   .card .btn:hover 
   {
-    background-color: white;
+    background-color: var(--white);
     color: var(--softBlue);
     border: 2px solid var(--softBlue);
   }
@@ -756,7 +756,7 @@ button.tab-links1:first-child
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: var(--softBlue);
-    color: white;
+    color: var(--white);
   }
 
   .emailCorrection 
@@ -782,7 +782,7 @@ button.tab-links1:first-child
 
   .inputValid p 
   {
-    color: white;
+    color: var(--white);
     font-size: 12px;
     font-weight: 500;
     font-style: italic;
