@@ -6,6 +6,6 @@
 
 Thanks for checking out this front-end coding challenge. You can see this challenge in [Bookmark page](https://cerulean-arithmetic-ae5be2.netlify.app/)
 
-**This challenge is made with HTML, CSSS and JavaScript**
+**This challenge is made with HTML, CSS and JavaScript**
 
 **Have fun building!** 🚀
